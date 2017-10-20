@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2238892aafdcd9b41a035e8c5fd5bf80
-timeCreated: 1508462405
+guid: f5c0958195aa01045b4d0d55740fd6c7
+timeCreated: 1508467512
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: burmL
+    4300000: burmSmall
   materials:
     importMaterials: 1
     materialName: 0
