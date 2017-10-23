@@ -1,0 +1,551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &107434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 404432}
+  - component: {fileID: 3350516}
+  - component: {fileID: 2308120}
+  - component: {fileID: 11406438}
+  m_Layer: 0
+  m_Name: Fern VertexColors Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404432
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.629212, y: 8.14527e-19, z: -0.036683034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2308120
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107434}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 395f190cd6615407eb26dd4536956d59, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &3350516
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107434}
+  m_Mesh: {fileID: 4300000, guid: dbaa2e084054c4e06989e7e4c1b43f8f, type: 2}
+--- !u!114 &11406438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300000, guid: 50213af510b544f09a70d0125e083c16, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 0
+  SnapShotColors:
+  - {r: 0.101960786, g: 0, b: 0.08268338, a: 0.09300113}
+  - {r: 0.101960786, g: 0, b: 0.041580096, a: 0.056311943}
+  - {r: 0.101960786, g: 0, b: 0.049794137, a: 0.0608921}
+  - {r: 0.101960786, g: 0, b: 0.098763786, a: 0.09728651}
+  - {r: 0.101960786, g: 0, b: 0.12781519, a: 0.11910211}
+  - {r: 0.101960786, g: 0.12156863, b: 0.16152352, a: 0.14020513}
+  - {r: 0.69803923, g: 0, b: 0.022341223, a: 0.026206916}
+  - {r: 0.101960786, g: 0, b: 0.011179903, a: 0.018246269}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.69803923, g: 0, b: 0.022341223, a: 0.026206916}
+  - {r: 0.101960786, g: 0, b: 0.05254054, a: 0.07656027}
+  - {r: 0.101960786, g: 0, b: 0.039571136, a: 0.06002521}
+  - {r: 0.101960786, g: 0, b: 0.013254824, a: 0.04526856}
+  - {r: 0.101960786, g: 0, b: 0.090001866, a: 0.094180726}
+  - {r: 0.101960786, g: 0, b: 0.11481427, a: 0.11289126}
+  - {r: 0.101960786, g: 0, b: 0.15588096, a: 0.13618483}
+  - {r: 0.101960786, g: 0, b: 0.0059874863, a: 0.029068073}
+  - {r: 0.101960786, g: 0, b: 0.007845649, a: 0.018181926}
+  - {r: 0.101960786, g: 0, b: 0.007845649, a: 0.018181926}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.2, g: 0, b: 0.011942064, a: 0.04048876}
+  - {r: 0.2, g: 0, b: 0.013071779, a: 0.04327383}
+  - {r: 0.2, g: 0, b: 0.03967523, a: 0.093812324}
+  - {r: 0.2, g: 0, b: 0.023491392, a: 0.0686497}
+  - {r: 0.2, g: 0, b: 0.06304236, a: 0.109884374}
+  - {r: 0.2, g: 0, b: 0.10429325, a: 0.13172358}
+  - {r: 0.2, g: 0.12156863, b: 0.13596117, a: 0.14772098}
+  - {r: 0.2, g: 0.12156863, b: 0.20513515, a: 0.16883019}
+  - {r: 0.7019608, g: 0, b: 0.06817482, a: 0.09070892}
+  - {r: 0.69803923, g: 0, b: 0.04259021, a: 0.056562215}
+  - {r: 0.7019608, g: 0, b: 0.030216435, a: 0.054571297}
+  - {r: 0.7019608, g: 0.12156863, b: 0.09710663, a: 0.096868254}
+  - {r: 0.7019608, g: 0.12156863, b: 0.12101628, a: 0.11759063}
+  - {r: 0.7019608, g: 0, b: 0.011077091, a: 0.020116828}
+  - {r: 0.7019608, g: 0.12156863, b: 0.16077505, a: 0.13950817}
+  - {r: 0.69803923, g: 0, b: 0.022341223, a: 0.026206916}
+  - {r: 0.69803923, g: 0, b: 0.022341223, a: 0.026206916}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.3019608, g: 0, b: 0.047905277, a: 0.052899122}
+  - {r: 0.3019608, g: 0, b: 0.035782572, a: 0.04190017}
+  - {r: 0.3019608, g: 0, b: 0.020224521, a: 0.031992566}
+  - {r: 0.3019608, g: 0, b: 0.07396138, a: 0.069362976}
+  - {r: 0.101960786, g: 0, b: 0.007845649, a: 0.018181926}
+  - {r: 0.3019608, g: 0, b: 0.0059377197, a: 0.01668475}
+  - {r: 0.101960786, g: 0, b: 0.007845649, a: 0.018181926}
+  - {r: 0.101960786, g: 0, b: 0.0037682184, a: 0.0099704}
+  - {r: 0.101960786, g: 0, b: 0.0020428887, a: 0.005113541}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.101960786, g: 0, b: 0.024076244, a: 0.033039164}
+  - {r: 0.101960786, g: 0, b: 0.02033576, a: 0.025623608}
+  - {r: 0.101960786, g: 0, b: 0.005664568, a: 0.01660717}
+  - {r: 0.101960786, g: 0, b: 0.052738544, a: 0.054490495}
+  - {r: 0.101960786, g: 0, b: 0.042359553, a: 0.044175684}
+  - {r: 0.101960786, g: 0.12156863, b: 0.07728494, a: 0.07153175}
+  - {r: 0.101960786, g: 0, b: 0.02033576, a: 0.025623608}
+  - {r: 0.101960786, g: 0, b: 0.004834596, a: 0.006489146}
+  - {r: 0.101960786, g: 0, b: 0.0020428887, a: 0.005113541}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.101960786, g: 0, b: 0.02033576, a: 0.025623608}
+  - {r: 0.101960786, g: 0, b: 0.0035068356, a: 0.017001053}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.101960786, g: 0, b: 0.010046586, a: 0.029865762}
+  - {r: 0.5019608, g: 0, b: 0.024116779, a: 0.05766676}
+  - {r: 0.101960786, g: 0, b: 0.0055057653, a: 0.03950635}
+  - {r: 0.5019608, g: 0, b: 0.024116779, a: 0.05766676}
+  - {r: 0.5019608, g: 0, b: 0.100958, a: 0.11061837}
+  - {r: 0.5019608, g: 0, b: 0.07383019, a: 0.091420226}
+  - {r: 0.5019608, g: 0, b: 0.04025303, a: 0.074962996}
+  - {r: 0.5019608, g: 0, b: 0.15151776, a: 0.13341035}
+  - {r: 0.5019608, g: 0, b: 0.024116779, a: 0.05766676}
+  - {r: 0.101960786, g: 0, b: 0.0055057653, a: 0.03950635}
+  - {r: 0.101960786, g: 0, b: 0.013028884, a: 0.019796291}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  - {r: 0.101960786, g: 0, b: 0.0016109644, a: 0.028279243}
+  - {r: 0.101960786, g: 0, b: 0.04947148, a: 0.061917633}
+  - {r: 0.101960786, g: 0, b: 0.010635083, a: 0.04488975}
+  - {r: 0.101960786, g: 0, b: 0.053832166, a: 0.07674614}
+  - {r: 0.101960786, g: 0, b: 0.09461953, a: 0.09520998}
+  - {r: 0.101960786, g: 0, b: 0.11570836, a: 0.113072015}
+  - {r: 0.101960786, g: 0, b: 0.15618846, a: 0.13648793}
+  - {r: 0.101960786, g: 0, b: 0.0059874863, a: 0.029068073}
+  - {r: 0.101960786, g: 0, b: 0.0055057653, a: 0.03950635}
+  - {r: 0.101960786, g: 0, b: 0.018416742, a: 0.09226386}
+  - {r: 0.101960786, g: 0, b: 0.004196945, a: 0.06681164}
+  - {r: 0.101960786, g: 0, b: 0.014937642, a: 0.106905736}
+  - {r: 0.101960786, g: 0.2, b: 0.046641, a: 0.12843607}
+  - {r: 0.101960786, g: 0.2, b: 0.06254171, a: 0.14405762}
+  - {r: 0.101960786, g: 0.2, b: 0.14833571, a: 0.16492152}
+  - {r: 0.27450982, g: 0.2, b: 0.07503183, a: 0.11084347}
+  - {r: 0.27450982, g: 0.2, b: 0.02809498, a: 0.09293268}
+  - {r: 0.27450982, g: 0, b: 0.040140565, a: 0.07061646}
+  - {r: 0.27450982, g: 0.2, b: 0.09892228, a: 0.13134286}
+  - {r: 0.27450982, g: 0.2, b: 0.14145738, a: 0.14811409}
+  - {r: 0.27450982, g: 0.2, b: 0.2020595, a: 0.16843484}
+  - {r: 0.27450982, g: 0, b: 0.026942687, a: 0.04568177}
+  - {r: 0.101960786, g: 0, b: 0.0055057653, a: 0.03950635}
+  - {r: 0.101960786, g: 0, b: 0.0055057653, a: 0.03950635}
+  - {r: 0, g: 0, b: 1.8891183e-15, a: 0.0032711474}
+  SnapShotAvailable: 1
+  BendingModeSelected: 3
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: Assets/Advanced Foliage Shaders v5/Demos/00 Shared Assets/Modified Meshes/Fern
+    simple VertexColors.asset
+  fileName: Fern simple VertexColors.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 2
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.2
+  maxBendingValueX: 0.4
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.70679003
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  VertexBlueValsStored: 1
+  hasChanged: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 107434}
+  m_IsPrefabParent: 1

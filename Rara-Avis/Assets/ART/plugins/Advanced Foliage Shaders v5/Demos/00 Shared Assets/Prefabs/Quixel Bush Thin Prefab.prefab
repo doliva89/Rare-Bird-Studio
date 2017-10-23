@@ -1,0 +1,401 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010888002586}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010888002586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000011223869678}
+  - component: {fileID: 33000013158837476}
+  - component: {fileID: 23000011415148716}
+  - component: {fileID: 114000013970725898}
+  m_Layer: 0
+  m_Name: Quixel Bush Thin Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011223869678
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010888002586}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.505951, y: 1.9209913e-17, z: -0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23000011415148716
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010888002586}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 65ffa937a3cfb406c9b0cd8ac9bd8cd7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33000013158837476
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010888002586}
+  m_Mesh: {fileID: 4300000, guid: 7f8ce3a344f30474d88f08f67689d028, type: 2}
+--- !u!114 &114000013970725898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010888002586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300000, guid: 18d6000b60a864fc69d60e16d3dbabf4, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 0
+  SnapShotColors:
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.4627451, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.07450981, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.05882353, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.19607843, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.7019608, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.050980393, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0.31764707, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  - {r: 0.8117647, g: 0, b: 0, a: 1}
+  SnapShotAvailable: 1
+  BendingModeSelected: 2
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: 
+  fileName: QuixelBush02.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 1
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 0
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.2
+  maxBendingValueX: 0.2
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.09688196
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.3024691
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals: []
+  VertexBlueValsStored: 1
+  hasChanged: 0

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Conifer Foilage Shader UV2_UV4_material
+  m_Shader: {fileID: 4800000, guid: f7483feb264f94d748b653ddd77a631d, type: 3}
+  m_ShaderKeywords: _BENDINGCONTROLS_UV4_AND_VERTEX_COLORS
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpTransSpecMap:
+        m_Texture: {fileID: 2800000, guid: ed1f5e0b036ca4f8fb4a4fc8c4585c0b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e6969d9ca9d0e4374b02f73717c6a93d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RainBumpMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BackfaceSmoothness: 1
+    - _BendingControls: 1
+    - _BouncedLighting: 0
+    - _Culling: 2
+    - _Cutoff: 0.3
+    - _DebugMode: 1
+    - _HorizonFade: 1
+    - _LeafTurbulence: 0.1
+    - _Pivots: 0
+    - _RainDetails: 0
+    - _RainTexScale: 4
+    - _TouchBending: 0
+    - _TranslucencyStrength: 0.5
+    - _TranslucencyViewDependency: 0.7
+    m_Colors:
+    - _AfsFoliageScale: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorVariation: {r: 1, g: 1, b: 1, a: 0}
+    - _SpecularReflectivity: {r: 0.33, g: 0.33, b: 0.33, a: 1}
+    - _TouchBendingForce: {r: 0, g: 0, b: 0, a: 0}
+    - _TouchBendingPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _TranslucencyColor: {r: 0.73000747, g: 0.85000443, b: 0.41001213, a: 1}

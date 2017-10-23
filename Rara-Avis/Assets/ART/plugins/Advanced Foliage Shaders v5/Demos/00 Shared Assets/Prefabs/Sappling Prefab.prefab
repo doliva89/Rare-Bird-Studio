@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011094445308}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011094445308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000011748770598}
+  - component: {fileID: 33000013390562016}
+  - component: {fileID: 23000013258974898}
+  - component: {fileID: 114000010716998306}
+  m_Layer: 0
+  m_Name: Sappling Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011748770598
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011094445308}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.71, y: 6.368629e-19, z: -0.028681753}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23000013258974898
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011094445308}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 395f190cd6615407eb26dd4536956d59, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33000013390562016
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011094445308}
+  m_Mesh: {fileID: 4300000, guid: 0fac762a3fbc64fd7982058fe89782d0, type: 2}
+--- !u!114 &114000010716998306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011094445308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300000, guid: 47d18e360f2584c0ead179cdca9da780, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 0
+  SnapShotColors:
+  - {r: 0.8509804, g: 0, b: 0.06, a: 0.038330644}
+  - {r: 1, g: 0, b: 0.06, a: 0.042777393}
+  - {r: 0.8, g: 0, b: 0.06, a: 0.028627533}
+  - {r: 0, g: 0, b: 0, a: 0.031538617}
+  - {r: 1, g: 0, b: 0.06, a: 0.033921868}
+  - {r: 0.9019608, g: 0, b: 0.06, a: 0.041565713}
+  - {r: 0, g: 0, b: 0.043764707, a: 0.006997537}
+  - {r: 0, g: 0, b: 0.043764707, a: 0.00492184}
+  - {r: 0, g: 0, b: 0, a: 0.0038907155}
+  - {r: 0, g: 0, b: 0.043764707, a: 0.007103999}
+  - {r: 0.5019608, g: 0, b: 0.042117648, a: 0.041347627}
+  - {r: 0.5019608, g: 0, b: 0.042117648, a: 0.039675847}
+  - {r: 0, g: 0, b: 0, a: 0.03344737}
+  - {r: 0.5019608, g: 0, b: 0.042117648, a: 0.038202655}
+  - {r: 0.2, g: 0, b: 0.06, a: 0.04672457}
+  - {r: 0, g: 0, b: 0, a: 0.031052893}
+  - {r: 0.2, g: 0, b: 0.06, a: 0.04149749}
+  - {r: 0.2, g: 0, b: 0.06, a: 0.041307803}
+  - {r: 0.34901962, g: 0, b: 0.036000002, a: 0.0116879735}
+  - {r: 0, g: 0, b: 0, a: 0.0070092357}
+  - {r: 0.34901962, g: 0, b: 0.036000002, a: 0.00754641}
+  - {r: 0.34901962, g: 0, b: 0.036000002, a: 0.008024558}
+  - {r: 0.34901962, g: 0, b: 0.036000002, a: 0.006578629}
+  - {r: 0.34901962, g: 0, b: 0.036000002, a: 0.012604979}
+  - {r: 0.6, g: 0, b: 0.04917647, a: 0.017449576}
+  - {r: 0.5019608, g: 0, b: 0.04917647, a: 0.021381656}
+  - {r: 0, g: 0, b: 0, a: 0.018468594}
+  - {r: 0.7019608, g: 0, b: 0.04917647, a: 0.024346987}
+  - {r: 0.7019608, g: 0, b: 0.04917647, a: 0.017815849}
+  - {r: 0.7490196, g: 0, b: 0.04917647, a: 0.023584124}
+  - {r: 0.7019608, g: 0, b: 0.04917647, a: 0.02400464}
+  - {r: 0.7019608, g: 0, b: 0.04917647, a: 0.02630717}
+  - {r: 0.6509804, g: 0, b: 0.04917647, a: 0.023652839}
+  - {r: 0, g: 0, b: 0, a: 0.015436781}
+  - {r: 0, g: 0, b: 0, a: 0.011072463}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0.0039261132}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0.0072219605}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0.0054405765}
+  - {r: 0, g: 0, b: 0, a: 0.020306988}
+  - {r: 0, g: 0, b: 0, a: 0.024925232}
+  - {r: 0, g: 0, b: 0, a: 0.03363135}
+  - {r: 0, g: 0, b: 0, a: 0.03344301}
+  SnapShotAvailable: 1
+  BendingModeSelected: 3
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: 
+  fileName: Sappling VertexColors.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 1
+  Mask2ndBendingSelected: 2
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.05
+  maxBendingValueX: 0.06
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1.7576038
+      outSlope: 1.7576038
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals: []
+  VertexBlueValsStored: 1
+  hasChanged: 0

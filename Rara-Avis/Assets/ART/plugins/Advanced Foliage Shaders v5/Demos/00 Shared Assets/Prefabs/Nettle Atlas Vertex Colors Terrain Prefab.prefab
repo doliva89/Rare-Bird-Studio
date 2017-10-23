@@ -1,0 +1,377 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 441248}
+  - component: {fileID: 3349896}
+  - component: {fileID: 2318540}
+  - component: {fileID: 114000011118232884}
+  m_Layer: 0
+  m_Name: Nettle Atlas Vertex Colors Terrain Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 168.95088, y: 36.67514, z: 161.59413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2318540
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 395f190cd6615407eb26dd4536956d59, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &3349896
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Mesh: {fileID: 4300000, guid: aa612f9289fee43ec9934fba33049a7c, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 106194}
+  m_IsPrefabParent: 1
+--- !u!114 &114000011118232884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300002, guid: 4f19b63d286b84d3bacb2825a87798fe, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 1
+  SnapShotColors:
+  - {r: 0.2, g: 0.078431375, b: 0.109250285, a: 0.13550344}
+  - {r: 0.2, g: 0, b: 0.065466985, a: 0.13190047}
+  - {r: 0.2, g: 0, b: 0.057746015, a: 0.12173759}
+  - {r: 0, g: 0, b: 0.023895431, a: 0.09835809}
+  - {r: 0.41568628, g: 0, b: 0.046464678, a: 0.12791713}
+  - {r: 0.41568628, g: 0, b: 0.050410956, a: 0.1340374}
+  - {r: 0.41568628, g: 0.050980393, b: 0.079399206, a: 0.1406526}
+  - {r: 0, g: 0, b: 0.024646545, a: 0.11355137}
+  - {r: 0.85882354, g: 0.07450981, b: 0.036917873, a: 0.03941496}
+  - {r: 0.85882354, g: 0.07450981, b: 0.042488012, a: 0.044900622}
+  - {r: 0, g: 0, b: 0.016150797, a: 0.037234873}
+  - {r: 0.85882354, g: 0.07450981, b: 0.057582874, a: 0.029641652}
+  - {r: 0.1764706, g: 0.07450981, b: 0.04013821, a: 0.04532099}
+  - {r: 0.1764706, g: 0.07450981, b: 0.03259198, a: 0.039424345}
+  - {r: 0.1764706, g: 0.07450981, b: 0.05244835, a: 0.022704836}
+  - {r: 0.1764706, g: 0.07450981, b: 0.041713804, a: 0.04195104}
+  - {r: 0.4, g: 0.050980393, b: 0.074094184, a: 0.10938213}
+  - {r: 0.4, g: 0, b: 0.05638429, a: 0.109728426}
+  - {r: 0.4, g: 0, b: 0.054633986, a: 0.10213304}
+  - {r: 0, g: 0, b: 0.022982381, a: 0.0866635}
+  - {r: 0.4, g: 0.050980393, b: 0.08971992, a: 0.11448055}
+  - {r: 0.4, g: 0.050980393, b: 0.09618043, a: 0.112880655}
+  - {r: 0.101960786, g: 0.050980393, b: 0.07926148, a: 0.08818269}
+  - {r: 0.101960786, g: 0, b: 0.0633518, a: 0.10370328}
+  - {r: 0.101960786, g: 0.050980393, b: 0.106990576, a: 0.09632697}
+  - {r: 0.101960786, g: 0.050980393, b: 0.11003821, a: 0.09483687}
+  - {r: 0.3019608, g: 0.03137255, b: 0.053945947, a: 0.04415432}
+  - {r: 0.3019608, g: 0, b: 0.047738343, a: 0.07464709}
+  - {r: 0.3019608, g: 0, b: 0.03926519, a: 0.056708705}
+  - {r: 0, g: 0, b: 0.021886807, a: 0.07356081}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0.010651494, a: 0.015664412}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0.010801527, a: 0.01612}
+  - {r: 0, g: 0, b: 0.016917173, a: 0.04132451}
+  - {r: 0, g: 0, b: 0.01683928, a: 0.04192918}
+  - {r: 0, g: 0, b: 0.020443086, a: 0.06291548}
+  - {r: 0, g: 0, b: 0.019848118, a: 0.063454956}
+  - {r: 0, g: 0, b: 0.022629227, a: 0.08720639}
+  - {r: 0, g: 0, b: 0.022685755, a: 0.087867044}
+  - {r: 0, g: 0, b: 0.024701305, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.024801819, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.022920033, a: 0.087261595}
+  - {r: 0, g: 0, b: 0.023331648, a: 0.08795177}
+  - {r: 0, g: 0, b: 0.025132125, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.025202485, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.02026596, a: 0.06293799}
+  - {r: 0, g: 0, b: 0.020154744, a: 0.06198736}
+  - {r: 0, g: 0, b: 0.01740078, a: 0.041956965}
+  - {r: 0, g: 0, b: 0.016923526, a: 0.041360278}
+  - {r: 0, g: 0, b: 0.0107192, a: 0.015869306}
+  - {r: 0, g: 0, b: 0.010568178, a: 0.015414818}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0.020154744, a: 0.06198736}
+  - {r: 0, g: 0, b: 0.022920033, a: 0.087261595}
+  - {r: 0, g: 0, b: 0.020443086, a: 0.06291548}
+  - {r: 0, g: 0, b: 0.022629227, a: 0.08720639}
+  - {r: 0, g: 0, b: 0.016917173, a: 0.04132451}
+  - {r: 0, g: 0, b: 0.016923526, a: 0.041360278}
+  - {r: 0, g: 0, b: 0.010651494, a: 0.015664412}
+  - {r: 0, g: 0, b: 0.010568178, a: 0.015414818}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0.024701305, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.025132125, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.022685755, a: 0.087867044}
+  - {r: 0, g: 0, b: 0.023331648, a: 0.08795177}
+  - {r: 0, g: 0, b: 0.019848118, a: 0.063454956}
+  - {r: 0, g: 0, b: 0.02026596, a: 0.06293799}
+  - {r: 0, g: 0, b: 0.01683928, a: 0.04192918}
+  - {r: 0, g: 0, b: 0.01740078, a: 0.041956965}
+  - {r: 0, g: 0, b: 0.010801527, a: 0.01612}
+  - {r: 0, g: 0, b: 0.0107192, a: 0.015869306}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0.024801819, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.025202485, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.024701305, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.025132125, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.024801819, a: 0.11404022}
+  - {r: 0, g: 0, b: 0.025202485, a: 0.11404022}
+  - {r: 0.2, g: 0, b: 0.032081082, a: 0.11936408}
+  - {r: 0.2, g: 0, b: 0.031916905, a: 0.12178303}
+  - {r: 0.2, g: 0, b: 0.042062394, a: 0.13071686}
+  - {r: 0, g: 0, b: 0.024868803, a: 0.1136024}
+  - {r: 0.7019608, g: 0.078431375, b: 0.033144042, a: 0.12142831}
+  - {r: 0.7019608, g: 0.078431375, b: 0.028336631, a: 0.12434467}
+  - {r: 0, g: 0, b: 0.024868803, a: 0.1136024}
+  - {r: 0.7019608, g: 0.078431375, b: 0.04348312, a: 0.13872097}
+  - {r: 0, g: 0, b: 0.024849296, a: 0.11380068}
+  - {r: 0, g: 0, b: 0.024907859, a: 0.11380068}
+  - {r: 0, g: 0, b: 0.024682628, a: 0.11380068}
+  - {r: 0, g: 0, b: 0.024751365, a: 0.11380068}
+  - {r: 0.29803923, g: 0, b: 0.04956425, a: 0.08192998}
+  - {r: 0, g: 0, b: 0.021886807, a: 0.07356081}
+  - {r: 0.29803923, g: 0, b: 0.04084129, a: 0.07575269}
+  - {r: 0.29803923, g: 0, b: 0.052752, a: 0.08787383}
+  - {r: 0.29803923, g: 0, b: 0.080861464, a: 0.06896527}
+  - {r: 0.14901961, g: 0.07450981, b: 0.056207336, a: 0.11018574}
+  - {r: 0, g: 0, b: 0.023895431, a: 0.09835809}
+  - {r: 0.14901961, g: 0.07450981, b: 0.049385644, a: 0.10086088}
+  - {r: 0.14901961, g: 0.07450981, b: 0.06371974, a: 0.110767104}
+  - {r: 0.14901961, g: 0.07450981, b: 0.09994059, a: 0.097409725}
+  - {r: 0, g: 0, b: 0.024646545, a: 0.11355137}
+  - {r: 0, g: 0, b: 0.044994574, a: 0.12720343}
+  - {r: 0, g: 0, b: 0.050345518, a: 0.14056891}
+  - {r: 0, g: 0, b: 0.048588473, a: 0.1331369}
+  - {r: 0, g: 0.050980393, b: 0.080113865, a: 0.14709912}
+  SnapShotAvailable: 1
+  BendingModeSelected: 3
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: /Users/dominikkyeck/Documents/02 Dominik/unity/00 My projects/AFS/AFS_5/Assets/Advanced
+    Foliage Shaders v5/Demos/00 Shared Assets/Modified Meshes 2017/Nettle VertexColors
+    Terrain.asset
+  fileName: Nettle VertexColors Terrain.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 1
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.15
+  maxBendingValueX: 0.17
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1.70076
+      outSlope: 1.70076
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.14506173
+      inSlope: 0.6025225
+      outSlope: 0.6025225
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0.10660221
+      outSlope: 0.10660221
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 1.3858025
+      outSlope: 1.3858025
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals: []
+  VertexBlueValsStored: 1
+  hasChanged: 0

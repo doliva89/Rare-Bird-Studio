@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: QuixelBush_afs
+  m_Shader: {fileID: 4800000, guid: f7483feb264f94d748b653ddd77a631d, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BENDINGCONTROLS_UV4_AND_VERTEX_COLORS _EMISSION
+    _METALLICGLOSSMAP _NORMALMAP _SPECGLOSSMAP
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AnimatedAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AnimatedEmission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: ec8e964cc3b4cbe47a09bd27d029db06, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMapVariant:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpTransSpecMap:
+        m_Texture: {fileID: 2800000, guid: 3f5b83573d7c64792ba7b872b4371112, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 59587dc4fdf7e1b4384d3873a2e7f97a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexVariant:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: aa7bd4ac119be3745909f4b5d207cf0f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RainBumpMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 2800000, guid: aa7bd4ac119be3745909f4b5d207cf0f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMapVariant:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransmissionThicknessMap:
+        m_Texture: {fileID: 2800000, guid: 578f84213403a4248948b6d8b83cac3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VariantMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AnimatedRandomRowOffset: 1
+    - _BackfaceSmoothness: 1
+    - _BendingControls: 1
+    - _BouncedLighting: 0
+    - _BumpScale: 2
+    - _CullMode: 0
+    - _Culling: 0
+    - _Cutoff: 0.3
+    - _DebugMode: 4
+    - _DetailMode: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 0.237
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HasAnimatedAlbedo: 0
+    - _HasAnimatedEmission: 0
+    - _HasTransmission: 0
+    - _HorizonFade: 1
+    - _IsCombined: 0
+    - _LeafTurbulence: 0.2
+    - _LightProbeScale: 1
+    - _MetaDiffuseScale: 1
+    - _MetaEmissionScale: 1
+    - _MetaMetallicSoup: 1
+    - _MetaSpecularScale: 1
+    - _MetaUseCustom: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Pivots: 0
+    - _RainDetails: 0
+    - _RainTexScale: 4
+    - _ReflectionProbeBoost: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TouchBending: 0
+    - _Translucency: 0
+    - _TranslucencyStrength: 0.6
+    - _TransmissionThicknessScale: 5
+    - _UVDetailMask: 0
+    - _UVSec: 0
+    - _VertexOcclusionPower: 1
+    - _WindHeightClamp: 0.059
+    - _WindHeightScale: 3.85
+    - _ZWrite: 1
+    m_Colors:
+    - _AnimatedFrameSize: {r: 0.125, g: 0.25, b: 0, a: 0}
+    - _AnimatedRowsColsTotal: {r: 8, g: 4, b: 0, a: 0}
+    - _AnimatedUVRange: {r: 0.5, g: 0.05, b: 0.05, a: 0.1}
+    - _AnimatedUVScaleOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorVariation: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MetaDiffuseAdd: {r: 0, g: 0, b: 0, a: 1}
+    - _MetaDiffuseTint: {r: 1, g: 1, b: 1, a: 1}
+    - _MetaEmissionAdd: {r: 0, g: 0, b: 0, a: 1}
+    - _MetaEmissionTint: {r: 1, g: 1, b: 1, a: 1}
+    - _MetaSpecularAdd: {r: 0, g: 0, b: 0, a: 1}
+    - _MetaSpecularTint: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecularReflectivity: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
+    - _TouchBendingForce: {r: 0, g: 0, b: 0, a: 0}
+    - _TouchBendingPosition: {r: 0, g: 0, b: 0, a: 0}

@@ -1,0 +1,441 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010342728846}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010342728846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000013965988108}
+  - component: {fileID: 33000013311310264}
+  - component: {fileID: 23000010970385496}
+  - component: {fileID: 114000012781344840}
+  m_Layer: 0
+  m_Name: Fern Fishbone Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013965988108
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010342728846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.89, y: 2.103066e-17, z: 0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23000010970385496
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010342728846}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 395f190cd6615407eb26dd4536956d59, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33000013311310264
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010342728846}
+  m_Mesh: {fileID: 4300000, guid: c61e4f56a81d14cdcb91ddb499885221, type: 2}
+--- !u!114 &114000012781344840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010342728846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300012, guid: 1a9dcefd2eaed4dc3b41777606096f33, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 3
+  SnapShotColors:
+  - {r: 0.2784314, g: 0, b: 0.027150625, a: 0.0987007}
+  - {r: 0.2784314, g: 0, b: 0.029196031, a: 0.095762804}
+  - {r: 0.2784314, g: 0, b: 0.008022747, a: 0.06236081}
+  - {r: 0.2784314, g: 0, b: 0.006135419, a: 0.06296548}
+  - {r: 0.2784314, g: 0, b: 0.005040325, a: 0.06493807}
+  - {r: 0.2784314, g: 0, b: 0.026132233, a: 0.10082937}
+  - {r: 0.2784314, g: 0, b: 0.09730891, a: 0.16584085}
+  - {r: 0.2784314, g: 0, b: 0.09798839, a: 0.16844901}
+  - {r: 0.2784314, g: 0, b: 0.0986028, a: 0.16998908}
+  - {r: 0.2784314, g: 0, b: 0.13375673, a: 0.20148884}
+  - {r: 0.2784314, g: 0, b: 0.0000192986, a: 0.03695187}
+  - {r: 0.2784314, g: 0, b: 0.0005585928, a: 0.037191592}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.021137714}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.018587293}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.038505767}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.017552039}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.0015478021}
+  - {r: 0.2784314, g: 0, b: 0.0062536774, a: 0.06635669}
+  - {r: 0.2784314, g: 0, b: 0.025794147, a: 0.09928444}
+  - {r: 0.2784314, g: 0, b: 0.008880272, a: 0.06939785}
+  - {r: 0.2784314, g: 0, b: 0.027409635, a: 0.09790505}
+  - {r: 0.2784314, g: 0, b: 0.09801833, a: 0.16954921}
+  - {r: 0.2784314, g: 0, b: 0.09744495, a: 0.16829243}
+  - {r: 0.2784314, g: 0, b: 0.00006989662, a: 0.040320173}
+  - {r: 0.2784314, g: 0, b: 0.0009877924, a: 0.043615013}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.013861066}
+  - {r: 0.2784314, g: 0, b: 0, a: 0.011244677}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.018197002}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.019374125}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.0054422123}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.0021784126}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.021065138}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.0023571725}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.019387906}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.021567013}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.005479246}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.033066113}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.03258354}
+  - {r: 0.1882353, g: 0, b: 0.00016161877, a: 0.035096772}
+  - {r: 0.1882353, g: 0, b: 0, a: 0.034433953}
+  - {r: 0.1882353, g: 0, b: 0.0006617761, a: 0.03779071}
+  - {r: 0.1882353, g: 0, b: 0.006528837, a: 0.06867279}
+  - {r: 0.1882353, g: 0, b: 0.0072834576, a: 0.06925399}
+  - {r: 0.1882353, g: 0, b: 0.009379451, a: 0.071405165}
+  - {r: 0.1882353, g: 0, b: 0.00018378519, a: 0.0354218}
+  - {r: 0.1882353, g: 0, b: 0.06953178, a: 0.14324914}
+  - {r: 0.1882353, g: 0, b: 0.08191129, a: 0.15411034}
+  - {r: 0.1882353, g: 0, b: 0.0088548055, a: 0.069095194}
+  - {r: 0.1882353, g: 0, b: 0.011189071, a: 0.070180595}
+  - {r: 0.2, g: 0, b: 0.037960004, a: 0.0950589}
+  - {r: 0.2, g: 0, b: 0.03752073, a: 0.092601}
+  - {r: 0.2, g: 0, b: 0.014225125, a: 0.06170747}
+  - {r: 0.2, g: 0, b: 0.013449521, a: 0.062159084}
+  - {r: 0.2, g: 0, b: 0.013487885, a: 0.06282311}
+  - {r: 0.2, g: 0, b: 0.0392496, a: 0.09682267}
+  - {r: 0.2, g: 0, b: 0.10003765, a: 0.15007572}
+  - {r: 0.2, g: 0, b: 0.10125367, a: 0.15150061}
+  - {r: 0.2, g: 0, b: 0.1023741, a: 0.15258484}
+  - {r: 0.2, g: 0, b: 0.12750049, a: 0.17549205}
+  - {r: 0.2, g: 0, b: 0.0025875655, a: 0.037325192}
+  - {r: 0.2, g: 0, b: 0.003555431, a: 0.038051434}
+  - {r: 0.2, g: 0, b: 0.0006156445, a: 0.023673581}
+  - {r: 0.2, g: 0, b: 0.0000102909025, a: 0.02012198}
+  - {r: 0.2, g: 0, b: 0.0023356637, a: 0.036912136}
+  - {r: 0.2, g: 0, b: 0, a: 0.018305276}
+  - {r: 0.2, g: 0, b: 0, a: 0.003995775}
+  - {r: 0.2, g: 0, b: 0.0161433, a: 0.06476545}
+  - {r: 0.2, g: 0, b: 0.040284697, a: 0.09519393}
+  - {r: 0.2, g: 0, b: 0.020260908, a: 0.06718799}
+  - {r: 0.2, g: 0, b: 0.042525917, a: 0.093780555}
+  - {r: 0.2, g: 0, b: 0.1026163, a: 0.15248607}
+  - {r: 0.2, g: 0, b: 0.10305435, a: 0.15221311}
+  - {r: 0.2, g: 0, b: 0.0041702944, a: 0.039455555}
+  - {r: 0.2, g: 0, b: 0.0070103738, a: 0.042139426}
+  - {r: 0.2, g: 0, b: 0, a: 0.014942168}
+  - {r: 0.2, g: 0, b: 0, a: 0.012843542}
+  - {r: 0.5019608, g: 0, b: 0.000000005169384, a: 0.019925881}
+  - {r: 0.5019608, g: 0, b: 0.000016282238, a: 0.020324197}
+  - {r: 0.5019608, g: 0, b: 0, a: 0.008097015}
+  - {r: 0.5019608, g: 0, b: 0, a: 0.006773115}
+  - {r: 0.5019608, g: 0, b: 0.00011314732, a: 0.021246303}
+  - {r: 0.5019608, g: 0, b: 0, a: 0.007462761}
+  - {r: 0.5019608, g: 0, b: 0.00016084952, a: 0.021683397}
+  - {r: 0.5019608, g: 0, b: 0.0007998168, a: 0.024136936}
+  - {r: 0.5019608, g: 0, b: 0, a: 0.010300158}
+  - {r: 0.5019608, g: 0, b: 0.0024919482, a: 0.033489555}
+  - {r: 0.5019608, g: 0, b: 0.002407051, a: 0.033398066}
+  - {r: 0.5019608, g: 0, b: 0.003246226, a: 0.03401783}
+  - {r: 0.5019608, g: 0, b: 0.0037538654, a: 0.0358035}
+  - {r: 0.5019608, g: 0, b: 0.0063722916, a: 0.038872562}
+  - {r: 0.5019608, g: 0, b: 0.020820683, a: 0.06350805}
+  - {r: 0.5019608, g: 0, b: 0.021141319, a: 0.063832864}
+  - {r: 0.5019608, g: 0, b: 0.022358092, a: 0.06429653}
+  - {r: 0.5019608, g: 0, b: 0.07776048, a: 0.11889707}
+  - {r: 0.5019608, g: 0, b: 0.08641764, a: 0.127143}
+  - {r: 0.5019608, g: 0, b: 0.023010738, a: 0.06471757}
+  - {r: 0.5019608, g: 0, b: 0.024915775, a: 0.065402776}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.021454653}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.02363532}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.0077576316}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.003414428}
+  - {r: 0.43137255, g: 0, b: 0.00030772664, a: 0.025928529}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.0029939492}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.022328772}
+  - {r: 0.43137255, g: 0, b: 0.000000008875774, a: 0.024225025}
+  - {r: 0.43137255, g: 0, b: 0, a: 0.005187914}
+  - {r: 0.43137255, g: 0, b: 0.0024019307, a: 0.040310197}
+  - {r: 0.43137255, g: 0, b: 0.0013186459, a: 0.03872879}
+  - {r: 0.43137255, g: 0, b: 0.0049871043, a: 0.042807028}
+  - {r: 0.43137255, g: 0, b: 0.002159158, a: 0.040684696}
+  - {r: 0.43137255, g: 0, b: 0.0043561063, a: 0.043207467}
+  - {r: 0.43137255, g: 0, b: 0.02545438, a: 0.079899415}
+  - {r: 0.43137255, g: 0, b: 0.027725732, a: 0.081626095}
+  - {r: 0.43137255, g: 0, b: 0.03189039, a: 0.08383991}
+  - {r: 0.43137255, g: 0, b: 0.1112633, a: 0.15972137}
+  - {r: 0.43137255, g: 0, b: 0.12269908, a: 0.17063291}
+  - {r: 0.43137255, g: 0, b: 0.0270535, a: 0.07995179}
+  - {r: 0.43137255, g: 0, b: 0.02888397, a: 0.079746045}
+  - {r: 0.8117647, g: 0, b: 0.012637232, a: 0.11387481}
+  - {r: 0.8117647, g: 0, b: 0.014798265, a: 0.11051455}
+  - {r: 0.8117647, g: 0, b: 0.0027225616, a: 0.07125634}
+  - {r: 0.8117647, g: 0, b: 0.0014908666, a: 0.072992355}
+  - {r: 0.8117647, g: 0, b: 0.0009882789, a: 0.07276075}
+  - {r: 0.8117647, g: 0, b: 0.011705339, a: 0.11521698}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.041940548}
+  - {r: 0.8117647, g: 0, b: 0.000039944454, a: 0.042244636}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.024412}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.020741306}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.041774057}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.019052744}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.0011576642}
+  - {r: 0.8117647, g: 0, b: 0.0021792117, a: 0.07640977}
+  - {r: 0.8117647, g: 0, b: 0.013727994, a: 0.11412274}
+  - {r: 0.8117647, g: 0, b: 0.004979868, a: 0.07839359}
+  - {r: 0.8117647, g: 0, b: 0.017639479, a: 0.11212515}
+  - {r: 0.8117647, g: 0, b: 0.000003335379, a: 0.045031685}
+  - {r: 0.8117647, g: 0, b: 0.0010432252, a: 0.048127003}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.015068363}
+  - {r: 0.8117647, g: 0, b: 0, a: 0.012399642}
+  - {r: 0.8117647, g: 0, b: 0.039150756, a: 0.15465884}
+  - {r: 0.8117647, g: 0, b: 0.041140467, a: 0.15148969}
+  - {r: 0.8117647, g: 0, b: 0.07186421, a: 0.19545153}
+  - {r: 0.8117647, g: 0, b: 0.07213348, a: 0.19382848}
+  - {r: 0.8117647, g: 0, b: 0.105678394, a: 0.23191793}
+  - {r: 0.8117647, g: 0, b: 0.071973175, a: 0.19577505}
+  - {r: 0.8117647, g: 0, b: 0.07127598, a: 0.19419974}
+  - {r: 0.8117647, g: 0, b: 0.03820003, a: 0.15604644}
+  - {r: 0.8117647, g: 0, b: 0.038633905, a: 0.15410742}
+  - {r: 0.8117647, g: 0, b: 0.07073224, a: 0.19124864}
+  - {r: 0.8117647, g: 0, b: 0.038633905, a: 0.15410742}
+  - {r: 0.8117647, g: 0, b: 0.03969942, a: 0.15025473}
+  - {r: 0.8117647, g: 0, b: 0.039150756, a: 0.15465884}
+  - {r: 0.8117647, g: 0, b: 0.03820003, a: 0.15604644}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.015262354}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.0159644}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.0048296014}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.003595378}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.017115789}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.0038965873}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.016505376}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.01846859}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.006219558}
+  - {r: 0.6784314, g: 0, b: 0.0000007022108, a: 0.027136283}
+  - {r: 0.6784314, g: 0, b: 0, a: 0.027152365}
+  - {r: 0.6784314, g: 0, b: 0.00012914973, a: 0.028458554}
+  - {r: 0.6784314, g: 0, b: 0.00018433819, a: 0.028618284}
+  - {r: 0.6784314, g: 0, b: 0.0012489515, a: 0.031439167}
+  - {r: 0.6784314, g: 0, b: 0.008332058, a: 0.053805966}
+  - {r: 0.6784314, g: 0, b: 0.008522761, a: 0.053936142}
+  - {r: 0.6784314, g: 0, b: 0.009555845, a: 0.05512425}
+  - {r: 0.6784314, g: 0, b: 0.05579506, a: 0.103480555}
+  - {r: 0.6784314, g: 0, b: 0.06428556, a: 0.11071691}
+  - {r: 0.6784314, g: 0, b: 0.0102606295, a: 0.054159086}
+  - {r: 0.6784314, g: 0, b: 0.012039422, a: 0.05496178}
+  SnapShotAvailable: 1
+  BendingModeSelected: 3
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: /Users/dominikkyeck/Documents/02 Dominik/unity/00 My projects/AFS/AFS_5/Assets/Advanced
+    Foliage Shaders v5/Demos/00 Shared Assets/Modified Meshes/Fern Fishbone VertexColors.asset
+  fileName: Fern Fishbone VertexColors.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 2
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.3
+  maxBendingValueX: 0.4
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.20917772
+      outSlope: 0.20917772
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 2.1556952
+      outSlope: 2.1556952
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.13808464
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1.7861475
+      outSlope: 1.7861475
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.76851845
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals: []
+  VertexBlueValsStored: 1
+  hasChanged: 0
