@@ -22,10 +22,7 @@ GameObject:
   - component: {fileID: 33586186889027598}
   - component: {fileID: 65272810014310434}
   - component: {fileID: 23383646184174734}
-  - component: {fileID: 114340466872516412}
-  - component: {fileID: 114176655429710832}
-  - component: {fileID: 114431341164556600}
-  - component: {fileID: 114337361758463006}
+  - component: {fileID: 114561650235956268}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Bird
@@ -97,26 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114176655429710832
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1458469314323648}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb57cea3708856e438670dfb6e1733d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  maxVelocity: 1
-  maxForce: 1
-  maxSpeed: 20
-  speed: 10
-  mass: 1
-  slowRadius: 0
-  Avoid: {fileID: 0}
---- !u!114 &114337361758463006
+--- !u!114 &114561650235956268
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -124,29 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458469314323648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b77ae7dae12e95246a081c73650d9f0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  maxVelocity: 1
-  maxForce: 1
-  maxSpeed: 10
-  speed: 5
-  mass: 1
-  slowRadius: 5
-  maxSeeAhead: 10
-  maxAvoidanceForce: 0.7
-  maxSeperation: 3
-  threat: {fileID: 0}
---- !u!114 &114340466872516412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1458469314323648}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bff3122431ee0664a8ba3879a15e8121, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c0b6bc8f15b6984bbebe70408d7ef78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
@@ -155,27 +111,10 @@ MonoBehaviour:
   maxSpeed: 1
   speed: 0.1
   mass: 1
-  slowRadius: 5
-  Avoid: {fileID: 0}
---- !u!114 &114431341164556600
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1458469314323648}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a179e1edd32d244a63d8d3fb07c2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  maxVelocity: 1
-  maxForce: 1
-  maxSpeed: 20
-  speed: 10
-  mass: 1
-  slowRadius: 5
-  Avoid: {fileID: 0}
-  maxSeeAhead: 8
-  maxAvoidanceForce: 0.5
+  slowRadius: 0
+  maxSeeAhead: 0
+  maxAvoidanceForce: 0
+  maxSeperation: 0
+  birdPosition: {x: 0, y: 0, z: 0}
+  velocityBird: {x: 0, y: 0, z: 0}
   threat: {fileID: 0}

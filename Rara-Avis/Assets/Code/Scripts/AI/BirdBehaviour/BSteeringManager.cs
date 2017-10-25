@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +16,10 @@ public class BSteeringManager : MonoBehaviour {
     public float maxSeperation;
 
 
+    public Vector3 birdPosition = Vector3.zero;
+    public Vector3 velocityBird;
+
+
     //Vector3 position;
     Vector3 target;
     Vector3 ahead;
@@ -28,29 +32,46 @@ public class BSteeringManager : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        target = player.transform.TransformPoint(0, 5, -10);
+        target = player.transform.TransformPoint(birdPosition);
     }
 
     // Update is called once per frame
     void Update()
     {
-        target = player.transform.TransformPoint(0, 0, -10);
+        target = player.transform.TransformPoint(birdPosition);
         avoidanceForce = collisionAvoidance();
         threat = findMostThreateningObstacle();
 
         Ahead(target);
-        if (Random.Range(0, 5) < 1)
-        {
-            Seek(target, slowRadius);
-        }
-        transform.Translate(Time.deltaTime * speed, Time.deltaTime * speed, Time.deltaTime * speed);
-
+        Steering();
+        velocityBird = velocity;
     }
 
-    void Seek(Vector3 target, float radius)
+    void Steering()
+    {
+        Vector3 steering = Vector3.zero;
+
+        if (Random.Range(0, 5) < 1)
+        {
+            steering = steering + Seperation() + collisionAvoidance() + Seek(target, slowRadius);
+            steering = steering / mass;
+            velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
+        }
+        else
+        {
+            steering = steering + collisionAvoidance() + Seek(target, slowRadius);
+            steering = steering / mass;
+            velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
+        }
+
+        transform.position += velocity * Time.deltaTime * speed;
+        transform.LookAt(player.transform.position);
+    }
+
+    Vector3 Seek(Vector3 target, float radius)
     {
         Vector3 position = transform.position;
-        Vector3 velocity = Vector3.Normalize(target - position);
+        velocity = Vector3.Normalize(target - position);
         float distance = Vector3.Distance(target, position);
         Vector3 desiredVelocity = Vector3.zero;
         Vector3 steering = Vector3.zero;
@@ -68,26 +89,19 @@ public class BSteeringManager : MonoBehaviour {
 
         steering = desiredVelocity - velocity;
         steering = Vector3.ClampMagnitude(steering, maxForce);
-        steering = steering + Seperation() + collisionAvoidance();
-        steering = steering / mass;
-        velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
 
-        transform.position += velocity * Time.deltaTime * speed;
-        transform.LookAt(player.transform.position);
+        return steering;
     }
 
-    void Flee()
+    Vector3 Flee()
     {
         Vector3 velocity = Vector3.Normalize(transform.position - target);
         Vector3 desiredVelocity = Vector3.Normalize(transform.position - target) * maxVelocity;
         Vector3 steering = desiredVelocity - velocity;
 
         steering = Vector3.ClampMagnitude(steering, maxForce);
-        steering = steering / mass;
-        velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
 
-        transform.position += velocity * Time.deltaTime * speed;
-        transform.LookAt(-player.transform.position);
+        return steering;
     }
 
     void calcAvoidanceForce(GameObject go)
@@ -181,51 +195,36 @@ public class BSteeringManager : MonoBehaviour {
 
     Vector3 Seperation()
     {
+        Vector3 desiredVelocity = Vector3.zero;
+        Vector3 steering = Vector3.zero;
         Vector3 force = Vector3.zero;
-        Vector3 avoid = Vector3.zero;
-
         int neighbourCount = 0;
 
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Bird");
 
-        float dist;
-
-        for(int i = 0; i < objects.Length; i++)
+        for (int i = 0; i < objects.Length; i++)
         {
-            if (objects[i] != this)
+            if (objects[i] != this && Vector3.Distance(objects[i].transform.position, this.transform.position) <= maxSeperation)
             {
-                dist = Vector3.Distance(objects[i].transform.position, this.transform.position);
-                if (dist <= maxSeperation)
-                {
-                    //force = force + (this.transform.position - objects[i].transform.position);
-                    //force = objects[i].transform.position - this.transform.position;
-
-                    force += objects[i].transform.position;
-
-
-                    neighbourCount++;
-
-                    if(dist < 2.0f)
-                    {
-                        avoid = avoid + (this.transform.position - objects[i].transform.position);
-                    }
-
-                }
+                force = force + (this.transform.position - objects[i].transform.position);
+                neighbourCount++;
+            }
+            if(objects[i] != this && Vector3.Distance(objects[i].transform.position, this.transform.position) >= maxSeperation)
+            {
+                force = Vector3.Normalize(force) * maxVelocity * (Vector3.Distance(objects[i].transform.position, this.transform.position)/5);
+                neighbourCount++;
             }
         }
 
-        if(neighbourCount != 0)
+        if (neighbourCount != 0)
         {
             force /= neighbourCount;
-
-            force = (force + avoid) - this.transform.position;
 
             force = Vector3.ClampMagnitude(force, -1);
         }
 
         force.Normalize();
         force = Vector3.ClampMagnitude(force, maxSeperation);
-
 
         return force;
     }
@@ -239,8 +238,6 @@ public class BSteeringManager : MonoBehaviour {
         Gizmos.color = Color.black;
         Gizmos.DrawLine(transform.position, target);
     }
-
-
 
     public float getAngle(Vector3 vector)
     {
