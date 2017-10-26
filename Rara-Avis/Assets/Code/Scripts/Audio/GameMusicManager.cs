@@ -25,5 +25,6 @@ public class GameMusicManager : MonoBehaviour {
         int randomSong = Random.Range(0, playList.Length);
         source.clip = playList[randomSong];
         source.Play();
+        //CrossFade.Crossfade(playList[randomSong], 1F);
     }
 }
