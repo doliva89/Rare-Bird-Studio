@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-
-
+    itween_demo pathScript;
+    public string path;
     public float walkSpeed;
     public float runSpeed;
 
@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
-
+        float v = Input.GetAxis("Vertical");
         Jump();
         Landing();
         if (Input.GetMouseButton(0) && m_grounded || Input.GetButton("Slide") && m_grounded) {
@@ -100,7 +100,8 @@ public class PlayerMovement : MonoBehaviour {
         else if (Input.GetButtonUp("Slide")) {
             sliding = false;
         }
-
+        pathScript.detectGrind(gameObject);
+        movePlayerOnPath(v);
 
     }
 
@@ -121,7 +122,8 @@ public class PlayerMovement : MonoBehaviour {
         calculatingAngles();
         calculatingMultiplyer();
 
-        speed = Vector3.Distance(oldPos, transform.position);
+
+        speed = Vector3.Distance(oldPos, transform.position) * 10;
         oldPos = transform.position;
 
         playerAnim.SetBool("jumpIsTrue", !m_grounded);
@@ -171,14 +173,14 @@ public class PlayerMovement : MonoBehaviour {
 
         }
 
-        //if (sliding) {
-        //    //The Player is sliding
-        //    float xProj = animator.GetFloat("xProj");
-        //    moveDir = transform.TransformDirection(xProj * burm, 0, v * movementSpeed);
+        if (sliding) {
+            //The Player is sliding
+            //float xProj = animator.GetFloat("xProj");
+            //moveDir = transform.TransformDirection(xProj * burm, 0, v * movementSpeed);
 
-        //    rb.MovePosition(transform.position + (moveDir * Time.deltaTime));
-        //    rb.AddForce(moveDir * Time.deltaTime, ForceMode.VelocityChange);
-        //}
+            rb.MovePosition(transform.position + (transform.forward * movementSpeed * (speed / 2f) * Time.deltaTime));
+            //rb.AddForce(moveDir * Time.deltaTime, ForceMode.VelocityChange);
+        }
 
         if (!sliding) {
 
@@ -375,7 +377,11 @@ public class PlayerMovement : MonoBehaviour {
                     jump = 2;
                     clicked = true;
                     grind = true;
-                    //  print("landed");
+                    if (hitForLanding.transform.tag == "Grind") {
+                        path = hitForLanding.transform.gameObject.GetComponent<itween_demo>().pathName;
+                        pathScript = hitForLanding.transform.gameObject.GetComponent<itween_demo>();
+
+                    }
                 }
                 //Outside of above range is a failed click and landing
                 if (hitForLanding.distance > failGrindClickMax && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind" || hitForLanding.distance < failGrindClickMin && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind") {
@@ -386,6 +392,13 @@ public class PlayerMovement : MonoBehaviour {
                 }
             }
         }
+
+    }
+
+    void movePlayerOnPath(float v) {
+
+        pathScript.moveAlongPath(v, gameObject);
+        pathScript.endGrind(this);
 
     }
 
