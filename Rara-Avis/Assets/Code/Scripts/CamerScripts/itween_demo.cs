@@ -4,14 +4,13 @@ using System.Reflection;
 using UnityEngine;
 
 public class itween_demo : MonoBehaviour {
-  //  Vector3[] path;
-   
+    //  Vector3[] path;
+
+    public string pathName = "";
     public Transform[] grind;
-    public GameObject player;
-    public Transform grindEnd;
-    public Transform rotate;
+
     PlayerMovement grindDetect;
-   
+
     float minDistance = float.PositiveInfinity;
     float minPercent = 0;
     bool onPath;
@@ -21,44 +20,25 @@ public class itween_demo : MonoBehaviour {
     float t;
     RaycastHit hitForLanding;
     // Use this for initialization
-    void Start () {
-      
-        grindDetect = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-    }
 
-    // Update is called once per frame
-    void Update() {
-        float v = Input.GetAxis("Vertical");
-        detectGrind();
-        moveAlongPath(v);
-        endGrind();
-       // iTween.RotateTo(player, new Vector3(0, 0, -40), 1f);
-    }
+    public void detectGrind(GameObject player) {
 
-    void detectGrind() {
 
-        if (Physics.Raycast(player.transform.position, -player.transform.up, out hitForLanding)) {
-          
-            if (grindDetect.grind) {
-                for ( t = 0; t <= 1; t += 0.02f) {
-                     dist = Vector3.Distance(player.transform.position, iTween.PointOnPath(grind, t));
-                    if (dist < minDistance) {
-                        minDistance = dist;
-                        minPercent = t;
-                    }
-
-                }
-                iTween.PutOnPath(player, grind, minPercent);
-                onPath = true;
-
+        for (t = 0; t <= 1; t += 0.02f) {
+            dist = Vector3.Distance(player.transform.position, iTween.PointOnPath(grind, t));
+            if (dist < minDistance) {
+                minDistance = dist;
+                minPercent = t;
             }
 
         }
+        iTween.PutOnPath(player, grind, minPercent);
+        onPath = true;
     }
 
 
-    void moveAlongPath(float v) {
-        
+    public void moveAlongPath(float v, GameObject player) {
+
         if (onPath) {
             if (v > 0) {
                 minPercent += v * Time.deltaTime;
@@ -66,17 +46,17 @@ public class itween_demo : MonoBehaviour {
                     current = minPercent;
                 iTween.PutOnPath(player, grind, current);
             }
-              //grindDetect.grind = false;
-            }
+            //grindDetect.grind = false;
         }
+    }
 
 
-    void endGrind() {
+    public void endGrind(PlayerMovement g) {
 
         if (Input.GetButtonDown("Jump") || current >= 1) {
             onPath = false;
-            grindDetect.grind = false;
-            iTween.Stop(player);
+            g.grind = false;
+
             minPercent = 0;
             current = 0;
             minDistance = float.PositiveInfinity;
@@ -84,13 +64,13 @@ public class itween_demo : MonoBehaviour {
             //t = 0;
             //v = 0;
         }
-    
+
     }
 
-     void OnDrawGizmos() {
-       
+    void OnDrawGizmos() {
+
         iTween.DrawPath(grind, Color.magenta);
     }
-  
+
 
 }
