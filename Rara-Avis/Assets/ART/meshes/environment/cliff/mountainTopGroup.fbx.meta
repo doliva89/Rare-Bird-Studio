@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: b7ec83915a11c1248ad9d2212fdc92c2
+timeCreated: 1509675999
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: PillarMidA
+    100004: PillarMidB
+    100006: pillarTallA
+    100008: pillarTallB
+    100010: pillarTallC
+    100012: platformLarge2B
+    100014: platformLargeA
+    100016: platformLargeC
+    100018: platformMidA
+    100020: platformShortA
+    100022: platformShortB
+    100024: platformStackedA
+    100026: platformStepped
+    100028: platformTallA1
+    100030: platformTallA2
+    100032: platformWide1
+    100034: playerStart
+    100036: trail
+    400000: //RootNode
+    400002: PillarMidA
+    400004: PillarMidB
+    400006: pillarTallA
+    400008: pillarTallB
+    400010: pillarTallC
+    400012: platformLarge2B
+    400014: platformLargeA
+    400016: platformLargeC
+    400018: platformMidA
+    400020: platformShortA
+    400022: platformShortB
+    400024: platformStackedA
+    400026: platformStepped
+    400028: platformTallA1
+    400030: platformTallA2
+    400032: platformWide1
+    400034: playerStart
+    400036: trail
+    2300000: PillarMidA
+    2300002: PillarMidB
+    2300004: pillarTallA
+    2300006: pillarTallB
+    2300008: pillarTallC
+    2300010: platformLarge2B
+    2300012: platformLargeA
+    2300014: platformLargeC
+    2300016: platformMidA
+    2300018: platformShortA
+    2300020: platformShortB
+    2300022: platformStackedA
+    2300024: platformStepped
+    2300026: platformTallA1
+    2300028: platformTallA2
+    2300030: platformWide1
+    2300032: playerStart
+    2300034: trail
+    3300000: PillarMidA
+    3300002: PillarMidB
+    3300004: pillarTallA
+    3300006: pillarTallB
+    3300008: pillarTallC
+    3300010: platformLarge2B
+    3300012: platformLargeA
+    3300014: platformLargeC
+    3300016: platformMidA
+    3300018: platformShortA
+    3300020: platformShortB
+    3300022: platformStackedA
+    3300024: platformStepped
+    3300026: platformTallA1
+    3300028: platformTallA2
+    3300030: platformWide1
+    3300032: playerStart
+    3300034: trail
+    4300000: PillarMidB
+    4300002: PillarMidA
+    4300004: platformLarge2B
+    4300006: platformLargeA
+    4300008: pillarTallA
+    4300010: pillarTallB
+    4300012: pillarTallC
+    4300014: platformShortA
+    4300016: platformShortB
+    4300018: platformStepped
+    4300020: platformWide1
+    4300022: platformStackedA
+    4300024: playerStart
+    4300026: platformLargeC
+    4300028: platformMidA
+    4300030: trail
+    4300032: platformTallA2
+    4300034: platformTallA1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
