@@ -12,26 +12,13 @@ public class NewCamera : MonoBehaviour {
     private float height = 1.0f;
     [SerializeField]
     private float damping = 5.0f;
-    [SerializeField]
-    private bool smoothRotation = true;
-    [SerializeField]
-    private float rotationDamping = 10.0f;
-
-    [SerializeField]
-    private Vector3 targetLookAtOffset; // allows offsetting of camera lookAt, very useful for low bumper heights
     
-    [SerializeField]
-    private float bumperDistanceCheck = 2.5f; // length of bumper ray
-    [SerializeField]
-    private float bumperCameraHeight = 1.0f; // adjust camera height while bumping
-    [SerializeField]
-    private Vector3 bumperRayOffset; // allows offset of the bumper ray from target origin
+     // allows offset of the bumper ray from target origin
     PlayerMovement speed;
-    Vector3 offset = new Vector3(0,2,-4);
+    
     public Transform player;
     public Camera main;
-    float hity;
-    float hitx;
+   
     Vector3 lerpPos;
     /// <Summary>
     /// If the target moves, the camera should child the target to allow for smoother movement. DR
@@ -71,10 +58,7 @@ public class NewCamera : MonoBehaviour {
         {
             float dist = Vector3.Distance(hit.point, transform.position);
             wantedPosition = ray.GetPoint(dist - 0.5f);
-
-
-
-            Debug.DrawRay(transform.TransformPoint(bumperRayOffset), -transform.forward, Color.magenta);
+           // Debug.DrawRay(transform.TransformPoint(bumperRayOffset), -transform.forward, Color.magenta);
 
         }
 
