@@ -39,84 +39,54 @@ public class NewCamera : MonoBehaviour {
     private void Awake() { 
         speed = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         main = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        main.transform.position = target.position + offset;
+      
 
     }
 
 
     private void FixedUpdate() {
-        Vector3 wantedPosition = transform.TransformPoint(0, height, -distance);
-        
-       // check to see if there is anything behind the target
-       RaycastHit hit;
+        Vector3 wantedPosition = transform.position + transform.TransformDirection(0, 0, -distance);// = transform.TransformPoint(0, height, -distance);
+
+        // check to see if there is anything behind the target
+        RaycastHit hit;
         Vector3 back = target.transform.TransformDirection(-1 * Vector3.forward);
         float rightH = Input.GetAxis("RightThumb");
         float rightV = Input.GetAxis("RightThumbV");
-      
+
         Vector3 lookhere = new Vector3(/*(3 * Time.deltaTime) **/ rightV * 3, /*(3*Time.deltaTime)**/rightH * 3, 0);
-        transform.eulerAngles += lookhere;
+
+        float xVal = transform.localEulerAngles.x;
+        if (xVal > 180)
+            xVal -= 360;
+        transform.localEulerAngles = new Vector3(
+            Mathf.Clamp(xVal + lookhere.x, -45, 75),
+            transform.localEulerAngles.y + lookhere.y,
+            0);
+        Debug.Log(transform.localEulerAngles.ToString());
+        Ray ray = new Ray(transform.position, transform.TransformDirection(0, 0, -distance));
 
         // cast the bumper ray out from rear and check to see if there is anything behind
-        if (Physics.Raycast(transform.TransformPoint(bumperRayOffset), -transform.forward, out hit, bumperDistanceCheck)
-            && hit.transform != transform) // ignore ray-casts that hit the user. DR
+        if (Physics.Raycast(ray, out hit, Vector3.Distance(transform.position, transform.position + transform.TransformDirection(0, 0, -distance)))
+            && hit.transform != transform && !hit.transform.gameObject.CompareTag("Player")) // ignore ray-casts that hit the user. DR
         {
-            if (hit.point.y > transform.position.y)
-                hity = -.5f;
-            else
-                hity = 0.5f;
-            if (hit.point.x > transform.position.x + .5f)
-                hitx = -.5f;
-            else if (hit.point.x < transform.position.x - .5f)
-                hitx = 0.5f;
-            else
-                hitx = 0;
+            float dist = Vector3.Distance(hit.point, transform.position);
+            wantedPosition = ray.GetPoint(dist - 0.5f);
+
+
+
             Debug.DrawRay(transform.TransformPoint(bumperRayOffset), -transform.forward, Color.magenta);
-            
-            wantedPosition.x = hit.point.x + hitx;
-            wantedPosition.z = hit.point.z;
-            wantedPosition.y = Mathf.Lerp(hit.point.y + hity , wantedPosition.y, Time.deltaTime * damping);
+
         }
 
-        //if (Physics.Raycast(transform.TransformPoint(bumperRayOffset), -transform.forward, out hit, bumperDistanceCheck)
-        //    && hit.transform != transform) // ignore ray-casts that hit the user. DR
-        //{
-        //    Debug.DrawRay(transform.position, transform.TransformDirection( main.transform.position), Color.black);
-        //    Debug.DrawRay(transform.TransformPoint(bumperRayOffset), -transform.forward, Color.magenta);
-        //   // Debug.DrawRay()
-        //    // clamp wanted position to hit position
-        //    wantedPosition.x = hit.point.x;
-        //    wantedPosition.z = hit.point.z;
-        //    wantedPosition.y = Mathf.Lerp(hit.point.y + bumperCameraHeight, wantedPosition.y, Time.deltaTime * damping);
-        //}
-        float rotVal = Mathf.Clamp( speed.speed,0 , 10);
+        float rotVal = Mathf.Clamp(speed.speed, 0, 10);
         if (rotVal > 1)
             rotVal = 0;
         Quaternion playerRot = player.rotation;
-        
+
         playerRot.x = playerRot.x - .02f;
         playerRot.z = 0;
-       
-     
-      main.transform.position = Vector3.Lerp(main.transform.position, wantedPosition, Time.deltaTime * damping);
-        if (!speed.sliding) {
 
-          //  transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, (Time.deltaTime * rotationDamping) * rotVal);
-        }
 
-        else {
-            transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, target.rotation, (Time.deltaTime * rotationDamping) * rotVal);
-        }
-        //  transform.position = Vector3.Lerp(transform.position, wantedPosition, Time.deltaTime * damping);
-
-        //Vector3 lookPosition = target.TransformPoint(wantedPosition);
-
-        // // if (new Vector2(rightH, rightV).magnitude > 0) {
-
-        // Quaternion wantedRotation = Quaternion.LookRotation (lookPosition- target.position, target.up);
-
-        //     transform.rotation = Quaternion.Slerp(transform.rotation, wantedRotation, (Time.deltaTime * rotationDamping) * speed.speed);
-
-        // }
-
+        main.transform.position = Vector3.Lerp(main.transform.position, wantedPosition, Time.deltaTime * damping);
     }
 }
