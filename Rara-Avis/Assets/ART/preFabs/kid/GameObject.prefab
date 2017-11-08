@@ -168,12 +168,6 @@ MonoBehaviour:
   distance: 5
   height: 1
   damping: 5
-  smoothRotation: 1
-  rotationDamping: 10
-  targetLookAtOffset: {x: 0, y: 0, z: 0}
-  bumperDistanceCheck: 5
-  bumperCameraHeight: 1
-  bumperRayOffset: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
   main: {fileID: 20212444637484428}
 --- !u!114 &114893573294468388
