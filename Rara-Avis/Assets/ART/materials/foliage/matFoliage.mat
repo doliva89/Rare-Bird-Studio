@@ -90,6 +90,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HorizonFade: 5
+    - _IsCombined: 0
     - _LeafTurbulence: 0.2
     - _Metallic: 0
     - _Mode: 0
