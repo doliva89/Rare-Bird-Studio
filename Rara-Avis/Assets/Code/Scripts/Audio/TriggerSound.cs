@@ -6,6 +6,12 @@ public class TriggerSound : MonoBehaviour {
 
     public AudioClip[] clip;
 
+    public float soundPitchMin = 1.0f;
+    public float soundPitchMax = 0.7f;
+
+    public float soundVolumeMin = 0.1f;
+    public float soundVolumeMax = 0.3f;
+
     private AudioSource source;
 	// Use this for initialization
 	void Awake () {
@@ -16,15 +22,18 @@ public class TriggerSound : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
     {
-        source.PlayOneShot(clip[0],0.1F);
+        PlayClip();
     }
 
 
 
     void PlayClip()
     {
-        //add random clip
-        //add random volume (max,min)
-        //add random pitch (max,min)
+        source.pitch = Random.Range(soundPitchMin, soundPitchMax);
+        source.volume = Random.Range(soundVolumeMin, soundVolumeMax);
+
+        int randomClip = Random.Range(0, clip.Length - 1);
+
+        source.PlayOneShot(clip[randomClip], 0.1F);
     }
 }
