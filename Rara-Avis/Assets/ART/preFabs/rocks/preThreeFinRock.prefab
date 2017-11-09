@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4276183436541342}
   - component: {fileID: 33107035836767758}
   - component: {fileID: 23328832483982774}
+  - component: {fileID: 64030881654325838}
   m_Layer: 0
   m_Name: smRootSmall
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - component: {fileID: 4731034482373154}
   - component: {fileID: 33873269795132206}
   - component: {fileID: 23551051026427986}
+  - component: {fileID: 64746847777620344}
   m_Layer: 0
   m_Name: shroomTop (4)
   m_TagString: Untagged
@@ -123,6 +125,7 @@ GameObject:
   - component: {fileID: 4762075454957334}
   - component: {fileID: 33258564698607914}
   - component: {fileID: 23769731324083616}
+  - component: {fileID: 64972143794940202}
   m_Layer: 0
   m_Name: smRootLarge (1)
   m_TagString: Untagged
@@ -157,6 +160,7 @@ GameObject:
   - component: {fileID: 4431154059436350}
   - component: {fileID: 33267011683547940}
   - component: {fileID: 23437841086823694}
+  - component: {fileID: 64606756036489902}
   m_Layer: 0
   m_Name: smRockFin03
   m_TagString: Untagged
@@ -206,6 +210,7 @@ GameObject:
   - component: {fileID: 4075362888963090}
   - component: {fileID: 33661827355890840}
   - component: {fileID: 23712325876766270}
+  - component: {fileID: 64489731299882344}
   m_Layer: 0
   m_Name: smRockFin02
   m_TagString: Untagged
@@ -240,6 +245,7 @@ GameObject:
   - component: {fileID: 4979384479238638}
   - component: {fileID: 33917504158519884}
   - component: {fileID: 23692164170700384}
+  - component: {fileID: 64347463884330044}
   m_Layer: 0
   m_Name: smRootLarge
   m_TagString: Untagged
@@ -274,6 +280,7 @@ GameObject:
   - component: {fileID: 4596958910457270}
   - component: {fileID: 33678072939085744}
   - component: {fileID: 23192151480133980}
+  - component: {fileID: 64541293377155516}
   m_Layer: 0
   m_Name: shroomstem (4)
   m_TagString: Untagged
@@ -308,6 +315,7 @@ GameObject:
   - component: {fileID: 4573847083045670}
   - component: {fileID: 33104044292789262}
   - component: {fileID: 23473241629298816}
+  - component: {fileID: 64550271826420406}
   m_Layer: 0
   m_Name: smRockFin00
   m_TagString: Untagged
@@ -325,6 +333,7 @@ GameObject:
   - component: {fileID: 4122005106966376}
   - component: {fileID: 33465138318219092}
   - component: {fileID: 23097186401466536}
+  - component: {fileID: 64703697314522510}
   m_Layer: 0
   m_Name: smRockFin01
   m_TagString: Untagged
@@ -548,7 +557,7 @@ Transform:
   m_GameObject: {fileID: 1624230458211412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.32625026, y: 0.32625026, z: 0.32625026}
   m_Children:
   - {fileID: 4573847083045670}
   - {fileID: 4122005106966376}
@@ -1299,3 +1308,129 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561184036079336}
   m_Mesh: {fileID: 4300004, guid: bbb0c50ea3cbbbe449802f85e76e5fdd, type: 3}
+--- !u!64 &64030881654325838
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000340204657712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 96a4aeee06b77f04481a58f4892e105a, type: 3}
+--- !u!64 &64347463884330044
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887932619366570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ad3dc1396b2e3dd40bb9f50369f6a300, type: 3}
+--- !u!64 &64489731299882344
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634947527089854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 51b77d0734104ef4692fcf7deb1188b1, type: 3}
+--- !u!64 &64541293377155516
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956699598411934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: bbb0c50ea3cbbbe449802f85e76e5fdd, type: 3}
+--- !u!64 &64550271826420406
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986810044707086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 8ed4d096e7e6ac44ea0974f27fcdd1bb, type: 3}
+--- !u!64 &64606756036489902
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485197686822078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 680565030ab64ce429752d933753cebb, type: 3}
+--- !u!64 &64703697314522510
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987474851210954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b6e3fcde9d84cda4599ad945c5a55de9, type: 3}
+--- !u!64 &64746847777620344
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243807098565684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: bbb0c50ea3cbbbe449802f85e76e5fdd, type: 3}
+--- !u!64 &64972143794940202
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386966740998160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ad3dc1396b2e3dd40bb9f50369f6a300, type: 3}

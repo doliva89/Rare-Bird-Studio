@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4470511467235082}
   - component: {fileID: 33153116969490318}
   - component: {fileID: 23187495013459296}
+  - component: {fileID: 64168941234818682}
   m_Layer: 0
   m_Name: smBurmLong
   m_TagString: Untagged
@@ -1159,3 +1160,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026200848240336}
   m_Mesh: {fileID: 4300000, guid: 296e415db4037da46b65d806cfe12045, type: 3}
+--- !u!64 &64168941234818682
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004055529191104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 2238892aafdcd9b41a035e8c5fd5bf80, type: 3}
