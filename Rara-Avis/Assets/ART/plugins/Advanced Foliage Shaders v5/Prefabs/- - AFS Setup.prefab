@@ -63,23 +63,23 @@ MonoBehaviour:
   FoldBillboard: 1
   FoldCulling: 0
   FoldRender: 0
-  isLinear: 1
+  isLinear: 0
   AmbientLightingSH: 1
-  EnablePreserveLength: 0
+  EnablePreserveLength: 1
   m_WindZone: {fileID: 182000013457608592}
   Wind: {x: 0.6427876, y: 0, z: 0.7660445, w: 0.53}
   WindFrequency: 0.13
-  Foliage_WindPrimaryStrength: 1
-  Foliage_WindSecondaryStrength: 1
-  Foliage_LeafTurbulence: 4
-  Foliage_WaveSize: 10
-  Grass_WindStrength: 1
-  Grass_WaveSize: 1
-  Grass_WindSpeed: 0.25
-  Grass_WindJitterVariation: 0.2
-  Grass_WindJitterScale: 0.15
-  Trees_WindPrimaryStrength: 1
-  Trees_WindSecondaryStrength: 1
+  Foliage_WindPrimaryStrength: 0.37
+  Foliage_WindSecondaryStrength: 0.37
+  Foliage_LeafTurbulence: 0
+  Foliage_WaveSize: 0.8
+  Grass_WindStrength: 0.01
+  Grass_WaveSize: 0
+  Grass_WindSpeed: 0
+  Grass_WindJitterVariation: 0
+  Grass_WindJitterScale: 0
+  Trees_WindPrimaryStrength: 0
+  Trees_WindSecondaryStrength: 0
   RainAmount: 0
   TerrainLegacyBending: 1
   DetailDistanceForGrassShader: 90
@@ -93,7 +93,8 @@ MonoBehaviour:
   VertexLitColorVariation: {r: 1, g: 1, b: 1, a: 0}
   VertexLitHorizonFade: 0
   AfsSpecFade: {x: 30, y: 10}
-  TerrainFoliageNrmSpecMap: {fileID: 0}
+  TerrainFoliageNrmSpecMap: {fileID: 2800000, guid: 1b1862087021f48fc8521742e80b6829,
+    type: 3}
   GrassMinSmoothness: 0.2
   GrassMaxSmoothness: 0.6
   AutoSyncToTerrain: 1
@@ -126,5 +127,5 @@ WindZone:
   m_Radius: 20
   m_WindMain: 1
   m_WindTurbulence: 0.5
-  m_WindPulseMagnitude: 0.4
-  m_WindPulseFrequency: 0.3
+  m_WindPulseMagnitude: 0.6
+  m_WindPulseFrequency: 0.001
