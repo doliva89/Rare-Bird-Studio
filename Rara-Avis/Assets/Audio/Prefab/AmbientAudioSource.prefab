@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1527189811829328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.2, y: 2.38, z: 9.93}
+  m_LocalPosition: {x: 22.2, y: 2.38, z: 51.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50,10 +50,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6ec0ec78173519749a376e372cdf4dfe, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.18633081
+  m_Pitch: 0.5367896
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdChirps:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 6ec0ec78173519749a376e372cdf4dfe, type: 3}
   soundPitchMin: 0.7
   soundPitchMax: 0.1
   soundVolumeMin: 0.1

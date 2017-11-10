@@ -8,17 +8,21 @@ public class GameMusicManager : MonoBehaviour {
 
     private AudioSource source;
 
+    private PauseMenu pauseAudio;
+
     void Awake()
     {
         source = GetComponent<AudioSource>();
+        pauseAudio = GetComponentInParent<PauseMenu>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if(!source.isPlaying)
+		if(!source.isPlaying && !pauseAudio.pauseMenu)
         {
             PlayMusic();
         }
+        
 	}
 
     void PlayMusic()

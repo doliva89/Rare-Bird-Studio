@@ -15,20 +15,25 @@ public class BirdChirp : MonoBehaviour {
     public float waitTimeMin = 5f;
     public float waitTimeMax = 10f;
 
-
+    private PauseMenu pauseAudio;
 
     private AudioSource source;
 
     void Awake()
     {
         source = GetComponent<AudioSource>();
+        pauseAudio = FindObjectOfType<PauseMenu>();
     }
 
     void Update()
     {
-        if(!source.isPlaying)
+        if(!source.isPlaying && !pauseAudio.pauseMenu)
         {
             playChirps();
+        }
+        if(pauseAudio.pauseMenu)
+        {
+            source.Pause();
         }
     }
 
