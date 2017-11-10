@@ -18,8 +18,6 @@ public class NewCamera : MonoBehaviour {
     
     public Transform player;
     public Camera main;
-   
-    Vector3 lerpPos;
     /// <Summary>
     /// If the target moves, the camera should child the target to allow for smoother movement. DR
     /// </Summary>
@@ -49,7 +47,7 @@ public class NewCamera : MonoBehaviour {
             Mathf.Clamp(xVal + lookhere.x, -45, 75),
             transform.localEulerAngles.y + lookhere.y,
             0);
-        Debug.Log(transform.localEulerAngles.ToString());
+
         Ray ray = new Ray(transform.position, transform.TransformDirection(0, 0, -distance));
 
         // cast the bumper ray out from rear and check to see if there is anything behind
@@ -62,7 +60,7 @@ public class NewCamera : MonoBehaviour {
 
         }
 
-        float rotVal = Mathf.Clamp(speed.speed, 0, 10);
+        float rotVal = Mathf.Clamp(speed.speed, 0, 20);
         if (rotVal > 1)
             rotVal = 0;
         Quaternion playerRot = player.rotation;
@@ -72,5 +70,8 @@ public class NewCamera : MonoBehaviour {
 
 
         main.transform.position = Vector3.Lerp(main.transform.position, wantedPosition, Time.deltaTime * damping);
+        //if (speed.sliding) {
+        //    transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, playerRot, Time.deltaTime);
+        //}
     }
 }

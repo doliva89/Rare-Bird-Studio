@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour {
     public string path;
     public float walkSpeed;
     public float runSpeed;
-
+    public float steerSpeed;
+    public Transform obj;
     public float initialJumpForce;
     public float continJumpForce;
     public float negativeJumpForce;
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speedBonusRun;
     public float speedBonuswalk;
     public float slideMultiAdditon;
-    public float burm;
+    public float burmModifier;
 
     public float chargetimer;
     public float chargetime;
@@ -47,22 +48,21 @@ public class PlayerMovement : MonoBehaviour {
     public bool grind;
     [SerializeField]
     public float speed;
+    float orientation;
     Camera cam;
 
     Rigidbody rb;
     Vector3 moveDir;
     Vector3 slidingForce;
     Vector3 globalForce;
-    Vector3 directionOfRoll;
+   
     Vector3 oldPos;
-    private Animator animator;
+   
     private RaycastHit hit;
-
+    Vector3 newHit;
     Quaternion currentRot;
     private float gravity;
     private float movementSpeed;
-    private float _doubleTapTimeA;
-    private float _doubleTapTimeD;
     private float worldForwardAngle;
     private float worldRightAngle;
     private float jumpCharger;
@@ -73,9 +73,7 @@ public class PlayerMovement : MonoBehaviour {
     private bool running;
     private bool clicked;
     private bool negativeGravity;
-    private bool m_grounded;
-    private bool doubleTapA = false;
-    private bool doubleTapD = false;
+    public bool m_grounded;
     float time;
     float blendX;
     float blendY;
@@ -104,7 +102,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         pathScript.detectGrind(gameObject);
         movePlayerOnPath(v);
-
+        
     }
 
     void FixedUpdate() {
@@ -118,10 +116,10 @@ public class PlayerMovement : MonoBehaviour {
         blendX = playerAnim.GetFloat("blendX");
         blendY = playerAnim.GetFloat("blendY");
         time += Time.deltaTime;
-        if (time >= .5) {
-            speed = Vector3.Distance(oldPos, transform.position) * 10;
-            time = 0;
-        }
+      //  if (time >= .5) {
+           // speed = Vector3.Distance(oldPos, transform.position) * 10;
+           // time = 0;
+       // }
 
         m_grounded = IsGrounded();
         checkForSlopes();
@@ -132,11 +130,11 @@ public class PlayerMovement : MonoBehaviour {
         calculatingMultiplyer();
 
 
-       // speed = Vector3.Distance(oldPos, transform.position) * 10;
+        speed = Vector3.Distance(oldPos, transform.position) ;
         oldPos = transform.position;
 
         playerAnim.SetBool("jumpIsTrue", !m_grounded);
-        print(speed);
+       
     }
 
 
@@ -183,28 +181,42 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (sliding) {
+
             //The Player is sliding
             //float xProj = animator.GetFloat("xProj");
+            float bias = 1, tSpeed =Mathf.Abs( blendX * speed);
+            bias -= (tSpeed);
            
             playerAnim.SetBool("isSliding", true);
             playerAnim.SetFloat("blendX", x);
             playerAnim.SetFloat("blendY", v);
-            moveDir = transform.TransformDirection(blendX /** movementSpeed*/, 0, blendY/* * movementSpeed*/);
-            rb.MovePosition(transform.position + (moveDir * movementSpeed * (speed / 3f) * Time.deltaTime));
-            //rb.AddForce(moveDir * Time.deltaTime, ForceMode.VelocityChange);
+            Vector2 input = new Vector2(x, v);
+            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, /*blendY * 10*/ input.magnitude));
+            float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
+            
+            dir = Mathf.Clamp01(dir + 0.5f);
+            print(dir);
+            Debug.DrawRay(transform.position, globalForce.normalized, Color.magenta);
+            Debug.DrawRay(transform.position, mvd.normalized, Color.black);
+
+
+            moveDir =  (mvd * steerSpeed) * dir;
+            float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
+            //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
+            rb.MovePosition(transform.position + ( moveDir * /*(speed / 3f) **/ Time.deltaTime));
+            //if (v != 0 || x != 0)
+            //rb.MovePosition(transform.position + (transform.forward* movementSpeed * Time.deltaTime));
+            //rb.MovePosition(transform.localPosition + (transform.forward * movementSpeed * Time.deltaTime));
+
         }
 
         if (!sliding) {
 
             playerAnim.SetBool("isSliding", false);
             //The Player is running
-            // Vector3 _input = new Vector3(Input.GetAxis("Horizontal") * 3, 0, Input.GetAxis("Horizontal") * 3);
-
-            //Vector3 _moveDir = cam.transform.TransformDirection(_input);
-            // moveDir = transform.TransformDirection(0, 0, Mathf.Clamp(Mathf.Abs(v + x),-1,1)   /*Mathf.Abs*x)/*-1,1)*/ * movementSpeed);
             if (v != 0 || x != 0)
                 //rb.MovePosition(transform.position + (transform.forward* movementSpeed * Time.deltaTime));
-                rb.MovePosition(transform.position + (transform.forward * movementSpeed * Time.deltaTime));
+                rb.MovePosition(transform.localPosition + (transform.forward * movementSpeed * Time.deltaTime));
 
             playerAnim.SetFloat("walkSpeed", Mathf.Abs(v + x));
 
@@ -237,7 +249,7 @@ public class PlayerMovement : MonoBehaviour {
 
             m_grounded = false;
             running = false;
-            sliding = false;
+           // sliding = false;
             jump = 1;
             gravity = 0.87f;
             jumpCharger = 0;
@@ -302,14 +314,14 @@ public class PlayerMovement : MonoBehaviour {
         if (m_grounded && sliding) {
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
 
-            targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, (Time.deltaTime * 20));
+            targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, currentRot.eulerAngles.y/*targetRotation.eulerAngles.y*/, targetRotation.eulerAngles.z);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, (Time.deltaTime * 20) * (Mathf.Clamp(v + Mathf.Abs(h), -1f, 1)));
         }
 
-        ////If the player isn't grounded rotate them so there transform up is the same as the worlds up
-        else {
+        ////If the player isn't grounded rotate them so their transform up is the same as the worlds up
+        else if (!m_grounded && !sliding )   {
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, Vector3.up) * transform.rotation;
-            targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, currentRot.eulerAngles.y, targetRotation.eulerAngles.z);
+            targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, /*cam.transform.eulerAngles.y*/currentRot.eulerAngles.y, targetRotation.eulerAngles.z);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime /** (Mathf.Clamp(v + Mathf.Abs(h), 0f, 1))*/ * 10);
         }
     }
@@ -343,6 +355,7 @@ public class PlayerMovement : MonoBehaviour {
                 slidingForce.x = Mathf.Abs((worldRightAngle + slideStartAngel) * Multiplier);
             else
                 slidingForce.x = 0;
+           
             globalForce = slidingForce;
 
         }
@@ -351,7 +364,7 @@ public class PlayerMovement : MonoBehaviour {
             globalForce = Vector3.zero;
         }
         rb.AddForce(globalForce, ForceMode.Force);
-
+        
     }
 
     void Landing() {
