@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     public float walkSpeed;
     public float runSpeed;
     public float steerSpeed;
-    public Transform obj;
+   
     public float initialJumpForce;
     public float continJumpForce;
     public float negativeJumpForce;
@@ -50,12 +50,12 @@ public class PlayerMovement : MonoBehaviour {
     public float speed;
     float orientation;
     Camera cam;
-
+    ParticleSystem dust;
     Rigidbody rb;
     Vector3 moveDir;
     Vector3 slidingForce;
     Vector3 globalForce;
-   
+
     Vector3 oldPos;
    
     private RaycastHit hit;
@@ -79,15 +79,18 @@ public class PlayerMovement : MonoBehaviour {
     float blendY;
 
 
-    void Start() {
-
+    void Awake() {
+      //  dust = GetComponentInChildren<ParticleSystem>();
+        //dust.Play();
+       // print(dust.isPlaying);
         globalForce = Vector3.zero;
         rb = GetComponent<Rigidbody>();
         playerAnim = GameObject.FindGameObjectWithTag("kid").GetComponent<Animator>();
        // gravity = .87f;
         cam = Camera.main;
-
-    }
+       
+       
+        }
 
     void Update() {
         float v = Input.GetAxis("Vertical");
@@ -100,16 +103,22 @@ public class PlayerMovement : MonoBehaviour {
         else if (Input.GetButtonUp("Slide")) {
             sliding = false;
         }
-        pathScript.detectGrind(gameObject);
-        movePlayerOnPath(v);
-        
+        if (grind) {
+            pathScript.detectGrind(/*gameObject*/);
+            movePlayerOnPath(2);
+        }
+       
     }
 
     void FixedUpdate() {
 
 
         ///Jump();
+        ///
+      
+         
 
+      //  print(dust.isPlaying);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
        
@@ -195,19 +204,19 @@ public class PlayerMovement : MonoBehaviour {
             float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
             
             dir = Mathf.Clamp01(dir + 0.5f);
-            print(dir);
+           
             Debug.DrawRay(transform.position, globalForce.normalized, Color.magenta);
             Debug.DrawRay(transform.position, mvd.normalized, Color.black);
 
 
             moveDir =  (mvd * steerSpeed) * dir;
-            float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
+           // float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
             //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
             rb.MovePosition(transform.position + ( moveDir * /*(speed / 3f) **/ Time.deltaTime));
             //if (v != 0 || x != 0)
             //rb.MovePosition(transform.position + (transform.forward* movementSpeed * Time.deltaTime));
             //rb.MovePosition(transform.localPosition + (transform.forward * movementSpeed * Time.deltaTime));
-
+           
         }
 
         if (!sliding) {
@@ -219,7 +228,7 @@ public class PlayerMovement : MonoBehaviour {
                 rb.MovePosition(transform.localPosition + (transform.forward * movementSpeed * Time.deltaTime));
 
             playerAnim.SetFloat("walkSpeed", Mathf.Abs(v + x));
-
+            //dust.Stop();
         }
 
     }
@@ -430,9 +439,12 @@ public class PlayerMovement : MonoBehaviour {
 
     void movePlayerOnPath(float v) {
 
-        pathScript.moveAlongPath(v, gameObject);
+        pathScript.moveAlongPath(v/*, gameObject*/);
         pathScript.endGrind(this);
-
+        if (!pathScript.onPath) {
+            print("hello");
+            rb.AddForce(pathScript.gameObject.transform.forward * (speed * 80), ForceMode.Impulse);
+        }
     }
 
     void calculatingMultiplyer() {

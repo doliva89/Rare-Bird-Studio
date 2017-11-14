@@ -10,18 +10,18 @@ public class itween_demo : MonoBehaviour {
     public Transform[] grind;
 
     PlayerMovement grindDetect;
-
+    
     float minDistance = float.PositiveInfinity;
     float minPercent = 0;
-    bool onPath;
-    float moveby;
+    public bool onPath;
+    public GameObject player;
     float current;
     float dist;
     float t;
     RaycastHit hitForLanding;
     // Use this for initialization
 
-    public void detectGrind(GameObject player) {
+    public void detectGrind(/*GameObject player*/) {
 
 
         for (t = 0; t <= 1; t += 0.02f) {
@@ -37,11 +37,11 @@ public class itween_demo : MonoBehaviour {
     }
 
 
-    public void moveAlongPath(float v, GameObject player) {
+    public void moveAlongPath(float speed /*GameObject player*/) {
 
         if (onPath) {
-            if (v > 0) {
-                minPercent += v * Time.deltaTime;
+            if (speed > 0) {
+                minPercent += speed * Time.deltaTime;
                 if (minPercent > current)
                     current = minPercent;
                 iTween.PutOnPath(player, grind, current);
@@ -51,7 +51,7 @@ public class itween_demo : MonoBehaviour {
     }
 
 
-    public void endGrind(PlayerMovement g) {
+    public void endGrind(PlayerMovement g ) {
 
         if (Input.GetButtonDown("Jump") || current >= 1) {
             onPath = false;
@@ -60,6 +60,7 @@ public class itween_demo : MonoBehaviour {
             minPercent = 0;
             current = 0;
             minDistance = float.PositiveInfinity;
+            
             //dist = 0;
             //t = 0;
             //v = 0;
