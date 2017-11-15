@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour {
     Animator playerAnim;
     private int jump = 0;
 
-
+    
     private bool running;
     private bool clicked;
     private bool negativeGravity;
@@ -80,9 +80,9 @@ public class PlayerMovement : MonoBehaviour {
 
 
     void Awake() {
-      //  dust = GetComponentInChildren<ParticleSystem>();
-        //dust.Play();
-       // print(dust.isPlaying);
+        dust = GetComponentInChildren<ParticleSystem>();
+        
+       
         globalForce = Vector3.zero;
         rb = GetComponent<Rigidbody>();
         playerAnim = GameObject.FindGameObjectWithTag("kid").GetComponent<Animator>();
@@ -99,15 +99,18 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetMouseButton(0) && m_grounded || Input.GetButton("Slide") && m_grounded) {
             sliding = true;
             running = false;
+            
         }
         else if (Input.GetButtonUp("Slide")) {
             sliding = false;
         }
         if (grind) {
             pathScript.detectGrind(/*gameObject*/);
-            movePlayerOnPath(2);
+            movePlayerOnPath(speed * Multiplier/ 1.2f );
         }
-       
+        if(!sliding)
+            dust.Play();
+        print(speed);
     }
 
     void FixedUpdate() {
@@ -134,6 +137,7 @@ public class PlayerMovement : MonoBehaviour {
         checkForSlopes();
         Movement(h, v);
         //  Landing();
+
         //checkForSlopes();
         calculatingAngles();
         calculatingMultiplyer();
@@ -184,10 +188,12 @@ public class PlayerMovement : MonoBehaviour {
 
 
         }
-        else {
+        else if (v != 0 || x != 0) {
             movementSpeed = walkSpeed + (Multiplier * speedBonuswalk); ;
 
         }
+        else 
+            movementSpeed = 0;
 
         if (sliding) {
 
@@ -242,7 +248,7 @@ public class PlayerMovement : MonoBehaviour {
             playerAnim.SetBool("failedLanding", false);
 
             gravity = 0.87f;
-            rb.AddForce(transform.up * initialJumpForce, ForceMode.VelocityChange);
+            rb.AddForce(transform.up * initialJumpForce + (transform.forward * movementSpeed) , ForceMode.VelocityChange);
         }
 
         if (Input.GetButton("Jump")) {
@@ -420,8 +426,8 @@ public class PlayerMovement : MonoBehaviour {
                     clicked = true;
                     grind = true;
                     if (hitForLanding.transform.tag == "Grind") {
-                        path = hitForLanding.transform.gameObject.GetComponent<itween_demo>().pathName;
-                        pathScript = hitForLanding.transform.gameObject.GetComponent<itween_demo>();
+                        path = hitForLanding.transform.gameObject.GetComponentInParent<itween_demo>().pathName;
+                        pathScript = hitForLanding.transform.gameObject.GetComponentInParent<itween_demo>();
 
                     }
                 }
@@ -442,8 +448,10 @@ public class PlayerMovement : MonoBehaviour {
         pathScript.moveAlongPath(v/*, gameObject*/);
         pathScript.endGrind(this);
         if (!pathScript.onPath) {
-            print("hello");
-            rb.AddForce(pathScript.gameObject.transform.forward * (speed * 80), ForceMode.Impulse);
+           
+            rb.AddForce(pathScript.gameObject.transform.forward * (speed ), ForceMode.Impulse);
+            path = null;
+            pathScript = null;
         }
     }
 
