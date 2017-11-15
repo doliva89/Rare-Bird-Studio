@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     public float walkSpeed;
     public float runSpeed;
     public float steerSpeed;
-   
+    public float maxStamina;
     public float initialJumpForce;
     public float continJumpForce;
     public float negativeJumpForce;
@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour {
     private float worldForwardAngle;
     private float worldRightAngle;
     private float jumpCharger;
+    float stamina;
     Animator playerAnim;
     private int jump = 0;
 
@@ -109,8 +110,8 @@ public class PlayerMovement : MonoBehaviour {
             movePlayerOnPath(speed * Multiplier/ 1.2f );
         }
         if(!sliding)
-            dust.Play();
-        print(speed);
+           // dust.Play();
+        print(stamina);
     }
 
     void FixedUpdate() {
@@ -173,6 +174,9 @@ public class PlayerMovement : MonoBehaviour {
     void Movement(float x, float v) {
 
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetButton("Run") && m_grounded) {
+           
+            stamina += Time.deltaTime;
+
             running = true;
             sliding = false;
 
@@ -180,15 +184,21 @@ public class PlayerMovement : MonoBehaviour {
         }
         else {
             running = false;
+            stamina = 0;
         }
 
 
         if (running) {
-            movementSpeed = runSpeed + (Multiplier * speedBonusRun); ;
-
+            if (stamina <= maxStamina)
+                movementSpeed = runSpeed + (Multiplier * speedBonusRun);
+            else {
+                running = false;
+                movementSpeed = walkSpeed + (Multiplier * speedBonuswalk);
+               
+            }
 
         }
-        else if (v != 0 || x != 0) {
+        else if (v != 0 || x != 0 && !running) {
             movementSpeed = walkSpeed + (Multiplier * speedBonuswalk); ;
 
         }
