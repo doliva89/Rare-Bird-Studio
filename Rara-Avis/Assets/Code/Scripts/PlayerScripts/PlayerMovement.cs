@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour {
         float v = Input.GetAxis("Vertical");
         Jump();
         Landing();
-        if (Input.GetMouseButton(0) && m_grounded || Input.GetButton("Slide") && m_grounded) {
+        if (Input.GetMouseButton(0) && m_grounded || Input.GetButton("Slide") && m_grounded && !grind) {
             sliding = true;
             running = false;
             
@@ -107,11 +107,12 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (grind) {
             pathScript.detectGrind(/*gameObject*/);
-            movePlayerOnPath(speed * Multiplier/ 1.2f );
+            movePlayerOnPath(.3f * Multiplier);
+          
         }
-        if(!sliding)
+     // if(!sliding)
            // dust.Play();
-        print(stamina);
+      
     }
 
     void FixedUpdate() {
@@ -459,7 +460,7 @@ public class PlayerMovement : MonoBehaviour {
         pathScript.endGrind(this);
         if (!pathScript.onPath) {
            
-            rb.AddForce(pathScript.gameObject.transform.forward * (speed ), ForceMode.Impulse);
+            rb.AddForce(pathScript.gameObject.transform.forward * (speed * Multiplier), ForceMode.Impulse);
             path = null;
             pathScript = null;
         }
