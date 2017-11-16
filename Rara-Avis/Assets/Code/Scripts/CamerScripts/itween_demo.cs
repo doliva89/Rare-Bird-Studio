@@ -21,6 +21,10 @@ public class itween_demo : MonoBehaviour {
     RaycastHit hitForLanding;
     // Use this for initialization
 
+    void Awake() {
+
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void detectGrind(/*GameObject player*/) {
 
 
