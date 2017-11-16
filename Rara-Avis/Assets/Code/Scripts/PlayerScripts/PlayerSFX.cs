@@ -20,27 +20,22 @@ public class PlayerSFX : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if(player.grind)
-        {
-            source.clip = grindClip;
-            source.Play();
-        }
-        if(!player.grind)
-        {
-            source.Stop();
-        }
 
-        if(player.sliding)
+        if (player.sliding && Input.GetButtonDown("Slide") && player.speed > 0.120)
         {
-            source.clip = slideClip;
-            source.PlayOneShot(slideClip, 0.5f);
+            PlaySlide();
         }
         
-        if(!player.sliding)
+        if(!player.sliding || player.speed < 0.124)
         {
             source.Stop();
         }
 
 	}
+
+    void PlaySlide()
+    {
+        source.clip = slideClip;
+        source.Play();
+    }
 }
