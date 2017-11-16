@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1205729747437646}
+  m_IsPrefabParent: 1
+--- !u!1 &1205729747437646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4242316043783366}
+  m_Layer: 0
+  m_Name: preRedLeaf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1834806470046556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4584818444739206}
+  - component: {fileID: 33558504583153198}
+  - component: {fileID: 23134843359313528}
+  - component: {fileID: 135750409684965766}
+  - component: {fileID: 114291723126537020}
+  - component: {fileID: 114046347560599886}
+  m_Layer: 0
+  m_Name: smRedLeaf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4242316043783366
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205729747437646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4584818444739206}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4584818444739206
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4242316043783366}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23134843359313528
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3b7e4d41c51d0c547b738fae7ace6194, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33558504583153198
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_Mesh: {fileID: 4300000, guid: a362690857ff7c54eac652a2b94188f3, type: 2}
+--- !u!114 &114046347560599886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a441f5f19be94787b934c93ecdaa973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bendability: 10
+  disturbance: 0.3
+  duration: 5
+--- !u!114 &114291723126537020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244de86e001f04c23be71034613874c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMesh: {fileID: 4300002, guid: e4730f8e0d3b9e74b8fbd98eb725a23c, type: 3}
+  Master: {fileID: 0}
+  usingMastersBounds: 0
+  UseDebugMaterial: 0
+  DebugMode: 0
+  SnapShotColors:
+  - {r: 0, g: 0, b: 0.13088948, a: 0.07855142}
+  - {r: 0, g: 0, b: 0.00032639483, a: 0.016638292}
+  - {r: 0.14901961, g: 0, b: 0.01626421, a: 0.03007245}
+  - {r: 0, g: 0, b: 0.059420176, a: 0.05287502}
+  - {r: 0.14901961, g: 0, b: 0.013571162, a: 0.02721331}
+  - {r: 0, g: 0, b: 0.06081726, a: 0.053062737}
+  - {r: 0, g: 0, b: 0.14438398, a: 0.08202634}
+  - {r: 0.101960786, g: 0, b: 0.040249873, a: 0.042921383}
+  - {r: 0, g: 0, b: 0.1294763, a: 0.077681415}
+  - {r: 0.101960786, g: 0, b: 0.013571162, a: 0.02721331}
+  - {r: 0, g: 0, b: 0.06760296, a: 0.0557199}
+  - {r: 0, g: 0, b: 0.12895939, a: 0.07765583}
+  - {r: 0.023529412, g: 0, b: 0.02346646, a: 0.034231294}
+  - {r: 0, g: 0, b: 0.05853005, a: 0.052083965}
+  - {r: 0.023529412, g: 0, b: 0.040249873, a: 0.042921383}
+  - {r: 0, g: 0, b: 0.12134564, a: 0.07527867}
+  - {r: 0, g: 0, b: 0.14218827, a: 0.081900224}
+  - {r: 0, g: 0, b: 0.07025962, a: 0.057638284}
+  - {r: 0.050980393, g: 0, b: 0.01626421, a: 0.03007245}
+  - {r: 0.050980393, g: 0, b: 0.02346646, a: 0.034231294}
+  - {r: 0, g: 0, b: 0.08651666, a: 0.06382835}
+  - {r: 0, g: 0, b: 0, a: 0.06762686}
+  - {r: 0, g: 0, b: 0.00017300982, a: 0.016762378}
+  - {r: 0, g: 0, b: 0.011071866, a: 0.021908587}
+  - {r: 0, g: 0, b: 0.007897116, a: 0.03864625}
+  - {r: 0, g: 0, b: 0.005221983, a: 0.044957805}
+  - {r: 0, g: 0, b: 0, a: 0.07565291}
+  - {r: 0, g: 0, b: 0.014264418, a: 0.026531665}
+  - {r: 0, g: 0, b: 0.00011529214, a: 0.06817787}
+  - {r: 0, g: 0, b: 0.010787552, a: 0.040808216}
+  - {r: 0, g: 0, b: 0.0029982594, a: 0.05300894}
+  - {r: 0, g: 0, b: 0.015458768, a: 0.03175033}
+  - {r: 0, g: 0, b: 0, a: 0.071159385}
+  - {r: 0, g: 0, b: 0.00028322826, a: 0.06557524}
+  - {r: 0, g: 0, b: 0.009365812, a: 0.0202552}
+  - {r: 0, g: 0, b: 0.009370294, a: 0.040306475}
+  - {r: 0, g: 0, b: 0.00055081584, a: 0.06495647}
+  - {r: 0, g: 0, b: 0.009303388, a: 0.037742287}
+  SnapShotAvailable: 1
+  BendingModeSelected: 3
+  Scale: 2
+  hasBeenSaved: 1
+  savePath: F:/Documents/Rare-Bird-Studio/Rara-Avis/Assets/ART/meshes/environment/Foliage/afsMesh/afsmRedLeaf.asset
+  fileName: afsmRedLeaf.asset
+  hasSubmeshes: 0
+  mergeSubMeshes: 0
+  has2ndUV: 1
+  delete2ndUV: 0
+  storeUV4: 0
+  convert2simpletree: 0
+  convert2foliage: 0
+  sourceTex0: {fileID: 0}
+  sourceTex1: {fileID: 0}
+  sourceTexDiffuse: {fileID: 0}
+  textureSplitHalf: 0
+  showTextureCombine: 0
+  TextureSplitSelected: 0
+  generateUV2: 0
+  diffuseTexPath: 
+  transTexPath: 
+  combinedTexPath: 
+  simpleTreeConverted: 0
+  foliageTreeConverted: 0
+  foliageTreeUV4Converted: 0
+  Set1stBendingSelected: 2
+  Mask2ndBendingSelected: 1
+  adjustScale: 0
+  adjustVertexColors: 0
+  adjustBending: 1
+  FoldSetBending: 0
+  showGizmos: 1
+  maxBendingValueY: 0.1
+  maxBendingValueX: 0.326
+  curvY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvZ:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curvRed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvGreen:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvBlue:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curvAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Set1stBendingAlongY: 1
+  Set1stBendingRelative2Pivot: 0
+  VertexBlueVals: []
+  VertexBlueValsStored: 1
+  hasChanged: 0
+--- !u!135 &135750409684965766
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28
+  m_Center: {x: -0.0018633455, y: 0.12722619, z: -0.05}

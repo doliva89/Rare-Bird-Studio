@@ -10,6 +10,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: PlantSmall
+    4300002: plantSmall
   materials:
     importMaterials: 0
     materialName: 0
