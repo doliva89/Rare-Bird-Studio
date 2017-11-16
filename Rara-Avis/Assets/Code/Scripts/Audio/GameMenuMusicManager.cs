@@ -5,8 +5,11 @@ using UnityEngine;
 public class GameMenuMusicManager : MonoBehaviour {
 
     public AudioClip[] playList;
+    public float musicVolume = 0.5f;
+
 
     private AudioSource source;
+
 
 
     void Awake()
@@ -26,6 +29,7 @@ public class GameMenuMusicManager : MonoBehaviour {
 
     void PlayMusic()
     {
+        source.volume = musicVolume;
         int randomSong = Random.Range(0, playList.Length);
         source.clip = playList[randomSong];
         source.Play();

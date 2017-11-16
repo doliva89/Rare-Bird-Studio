@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if(Input.GetButtonDown("Cancel"))
         {
             Pause();
         }
@@ -48,6 +48,13 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void RestartLevel()
+    {
+        Scene loadedLevel = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(loadedLevel.name);
+        Time.timeScale = 1;
+    }
+
+    void Restart()
     {
         Scene loadedLevel = SceneManager.GetActiveScene();
         SceneManager.LoadScene(loadedLevel.name);
