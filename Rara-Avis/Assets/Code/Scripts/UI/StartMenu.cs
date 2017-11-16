@@ -9,6 +9,6 @@ public class StartMenu : MonoBehaviour {
 
 	public void StartGame()
     {
-        SceneManager.LoadScene("dave_test");
+        SceneManager.LoadScene("MainScene");
     }
 }
