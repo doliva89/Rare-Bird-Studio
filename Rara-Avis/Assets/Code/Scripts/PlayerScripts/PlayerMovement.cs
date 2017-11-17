@@ -82,14 +82,12 @@ public class PlayerMovement : MonoBehaviour {
 
     void Awake() {
         dust = GetComponentInChildren<ParticleSystem>();
-        
-       
         globalForce = Vector3.zero;
         rb = GetComponent<Rigidbody>();
         playerAnim = GameObject.FindGameObjectWithTag("kid").GetComponent<Animator>();
        // gravity = .87f;
         cam = Camera.main;
-       
+        newHit = Vector3.zero;
        
         }
 
@@ -110,8 +108,8 @@ public class PlayerMovement : MonoBehaviour {
             movePlayerOnPath(.3f * Multiplier);
           
         }
-     // if(!sliding)
-           // dust.Play();
+      if(!sliding)
+            dust.Play();
       
     }
 
@@ -159,7 +157,7 @@ public class PlayerMovement : MonoBehaviour {
 
         //Raycast to check if the player is grounded or not
         if (Physics.Raycast(ray, out hit, .8f)) {
-
+            newHit = Vector3.Lerp(newHit, hit.normal, Time.deltaTime);
             if (hit.collider.tag == "Map" || hit.collider.tag == "Grind") {
                 chargetimer = 0;
                 negativeGravity = false;
@@ -185,7 +183,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else {
             running = false;
-            stamina = 0;
+           // stamina = 0;
         }
 
 
@@ -195,7 +193,8 @@ public class PlayerMovement : MonoBehaviour {
             else {
                 running = false;
                 movementSpeed = walkSpeed + (Multiplier * speedBonuswalk);
-               
+                if (stamina >= 3)
+                    stamina = 0;
             }
 
         }
@@ -208,32 +207,29 @@ public class PlayerMovement : MonoBehaviour {
 
         if (sliding) {
 
-            //The Player is sliding
-            //float xProj = animator.GetFloat("xProj");
-            float bias = 1, tSpeed =Mathf.Abs( blendX * speed);
+            float bias = 1, tSpeed =Mathf.Abs( blendY * speed);
             bias -= (tSpeed);
            
             playerAnim.SetBool("isSliding", true);
-            playerAnim.SetFloat("blendX", x);
-            playerAnim.SetFloat("blendY", v);
+           
             Vector2 input = new Vector2(x, v);
             Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, /*blendY * 10*/ input.magnitude));
             float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
-            
+           
             dir = Mathf.Clamp01(dir + 0.5f);
            
             Debug.DrawRay(transform.position, globalForce.normalized, Color.magenta);
             Debug.DrawRay(transform.position, mvd.normalized, Color.black);
+           // playerAnim.SetFloat("blendX", Vector3.Dot(transform.forward, globalForce.normalized));
+            playerAnim.SetFloat("blendY", v + Mathf.Abs(x));
 
-
-            moveDir =  (mvd * steerSpeed) * dir;
-           // float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
+            moveDir =  (mvd * steerSpeed )/* * dir*/;
+            //float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
             //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
-            rb.MovePosition(transform.position + ( moveDir * /*(speed / 3f) **/ Time.deltaTime));
-            //if (v != 0 || x != 0)
-            //rb.MovePosition(transform.position + (transform.forward* movementSpeed * Time.deltaTime));
-            //rb.MovePosition(transform.localPosition + (transform.forward * movementSpeed * Time.deltaTime));
-           
+            
+            rb.AddForce(/*transform.position + */( moveDir  * Time.deltaTime), ForceMode.VelocityChange);
+            
+           print(mvd);
         }
 
         if (!sliding) {
@@ -338,7 +334,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (m_grounded && sliding) {
-            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up,hit.normal) * transform.rotation;
 
             targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, currentRot.eulerAngles.y/*targetRotation.eulerAngles.y*/, targetRotation.eulerAngles.z);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, (Time.deltaTime * 20) * (Mathf.Clamp(v + Mathf.Abs(h), -1f, 1)));
