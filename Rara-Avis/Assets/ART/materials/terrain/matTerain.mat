@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: matTerain
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: 0ed9eb58d6f494e06abe4d788e9fa754, type: 3}
+  m_ShaderKeywords: _NORMALMAP _USEDRIFT2_ON _USEDRIFT3_ON _USEP1_2_ON _USEP1_3_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,6 +20,26 @@ Material:
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 217d071c382a2ea469b341fd5393d778, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CombinedMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CombinedMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CombinedMap3:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -42,6 +62,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: 624f6e649f1ae9445843be49d87daa53, type: 3}
         m_Scale: {x: 1, y: 20}
         m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -58,24 +86,85 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecularTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularTex3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _BaseHeight2: 0
+    - _BaseHeight3: 0
+    - _BlendSmooth2: 0.5
+    - _BlendSmooth3: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DepthBias: 50
+    - _DepthBiasPower: 2
+    - _DepthBiasThreshold: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emission: 0
+    - _Emission2: 0
+    - _Emission3: 0
+    - _FlowSpeed2: 0.25
+    - _FlowSpeed3: 0.25
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _HeightBasedTransparency2: 0.5
+    - _HeightBasedTransparency3: 0.5
+    - _HeightmapFactor2: 0.5
+    - _HeightmapFactor3: 0.5
     - _Metallic: 0
     - _Mode: 0
+    - _Occlusion: 1
+    - _Occlusion2: 1
+    - _Occlusion3: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Parallax2: -0.01
+    - _Parallax3: -0.01
+    - _ParallaxInterpolation: 15
+    - _Smoothness: 1
+    - _Smoothness2: 1
+    - _Smoothness3: 1
     - _SmoothnessTextureChannel: 0
+    - _Specular: 0
+    - _Specular2: 0
+    - _Specular3: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - _flowOnlyNormal: 0
+    - _showAlpha: 0
+    - _showBlue: 0
+    - _showGeneral: 0
+    - _showGreen: 0
+    - _showParallax: 1
+    - _showRed: 0
+    - _showVertexColor: 0
+    - _showVertexFlow: 0
+    - _useDepthBias: 0
+    - _useDrift2: 1
+    - _useDrift3: 1
+    - _useFlowMap2: 0
+    - _useFlowMap3: 0
+    - _useFlowMapGlobal: 0
+    - _useHeightBasedBlending: 0
+    - _useP1_2: 1
+    - _useP1_3: 1
+    - _useParallax: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor2: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor3: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
