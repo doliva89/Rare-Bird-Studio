@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33586186889027598}
   - component: {fileID: 65272810014310434}
   - component: {fileID: 23383646184174734}
-  - component: {fileID: 114561650235956268}
+  - component: {fileID: 114062259711906754}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Bird
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458469314323648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6173205, y: 194.44543, z: -473.12384}
+  m_LocalPosition: {x: 0.50699997, y: 0.86000013, z: -12.91}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 9a465f364108e214c98ab8c32395a9d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114561650235956268
+--- !u!114 &114062259711906754
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,19 +102,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458469314323648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0b6bc8f15b6984bbebe70408d7ef78, type: 3}
+  m_Script: {fileID: 11500000, guid: a88b37b7c389343428fb53db9e85302a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  maxVelocity: 1
-  maxForce: 1
-  maxSpeed: 1
-  speed: 0.1
-  mass: 1
-  slowRadius: 0
-  maxSeeAhead: 0
-  maxAvoidanceForce: 0
-  maxSeperation: 0
-  birdPosition: {x: 0, y: 0, z: 0}
-  velocityBird: {x: 0, y: 0, z: 0}
+  maxVelocity: 3
+  maxForce: 2
+  maxSpeed: 10
+  mass: 2
+  slowRadius: 3
+  maxSeeAhead: 4
+  maxAvoidanceForce: 3
+  maxSeperation: 2
+  seperationRadius: 4
+  targetPlayer: {x: 0, y: 0, z: 0}
   threat: {fileID: 0}
