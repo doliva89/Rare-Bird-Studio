@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114425577160724828}
   m_Layer: 0
   m_Name: smLeafFallGreen
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356252655486800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -67.40311, y: 175.43121, z: -140.41658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4736380578030830}
@@ -109,7 +109,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1674924248408862}
-  m_Mesh: {fileID: 4300000, guid: 78c543e66395a8843a374792dbd655ed, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 0b973701363c6f14c8ba21ecb7c447fa, type: 2}
 --- !u!114 &114425577160724828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,24 +127,24 @@ MonoBehaviour:
   UseDebugMaterial: 0
   DebugMode: 0
   SnapShotColors:
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
   SnapShotAvailable: 1
   BendingModeSelected: 3
   Scale: 2
   hasBeenSaved: 1
-  savePath: Assets/ART/meshes/environment/Foliage/afsMesh/afsMeshLeafFallGreen.asset
-  fileName: afsMeshLeafFallGreen.asset
+  savePath: Assets/ART/meshes/environment/Foliage/afsMesh/afsmLeafFallGreen.asset
+  fileName: afsmLeafFallGreen.asset
   hasSubmeshes: 0
   mergeSubMeshes: 0
   has2ndUV: 1
@@ -165,14 +165,14 @@ MonoBehaviour:
   simpleTreeConverted: 0
   foliageTreeConverted: 0
   foliageTreeUV4Converted: 0
-  Set1stBendingSelected: 1
+  Set1stBendingSelected: 2
   Mask2ndBendingSelected: 1
   adjustScale: 0
   adjustVertexColors: 0
-  adjustBending: 0
+  adjustBending: 1
   FoldSetBending: 0
   showGizmos: 1
-  maxBendingValueY: 0.1
+  maxBendingValueY: 0
   maxBendingValueX: 0
   curvY:
     serializedVersion: 2
@@ -191,7 +191,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvX:
     serializedVersion: 2
     m_Curve:
@@ -209,7 +209,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvZ:
     serializedVersion: 2
     m_Curve:
@@ -227,7 +227,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvRed:
     serializedVersion: 2
     m_Curve:
@@ -303,5 +303,5 @@ MonoBehaviour:
   Set1stBendingAlongY: 1
   Set1stBendingRelative2Pivot: 0
   VertexBlueVals: []
-  VertexBlueValsStored: 0
+  VertexBlueValsStored: 1
   hasChanged: 0

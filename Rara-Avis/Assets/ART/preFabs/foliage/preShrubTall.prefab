@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114443892586784264}
   m_Layer: 0
   m_Name: smShrubTall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062686170949714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -61.44014, y: 175.33371, z: -142.90205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4402650351327422}
@@ -556,7 +556,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.33
-  m_Height: 1.4526821
+  m_Radius: 0.2
+  m_Height: 1.05
   m_Direction: 1
-  m_Center: {x: -0.05103761, y: 0.62772936, z: 0.0037161112}
+  m_Center: {x: -0.03, y: 0.62772936, z: -0.06}

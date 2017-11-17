@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: matGrassFlat
   m_Shader: {fileID: 4800000, guid: f7483feb264f94d748b653ddd77a631d, type: 3}
-  m_ShaderKeywords: _BENDINGCONTROLS_VERTEX_COLORS
+  m_ShaderKeywords: AFS_TOUCHBENDING _BENDINGCONTROLS_VERTEX_COLORS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -92,7 +92,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TouchBending: 0
+    - _TouchBending: 1
     - _TranslucencyStrength: 1
     - _UVSec: 0
     - _ZWrite: 1

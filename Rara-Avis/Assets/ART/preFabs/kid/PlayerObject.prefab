@@ -2551,6 +2551,7 @@ GameObject:
   - component: {fileID: 54606279999338742}
   - component: {fileID: 136673163637529304}
   - component: {fileID: 114155259930468926}
+  - component: {fileID: 114345082870341498}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Player
@@ -6220,6 +6221,8 @@ MonoBehaviour:
   path: 
   walkSpeed: 6
   runSpeed: 15
+  steerSpeed: 0
+  maxStamina: 0
   initialJumpForce: 15
   continJumpForce: 10
   negativeJumpForce: 1
@@ -6229,7 +6232,7 @@ MonoBehaviour:
   speedBonusRun: 0.5
   speedBonuswalk: 0.25
   slideMultiAdditon: 0.2
-  burm: 10
+  burmModifier: 0
   chargetimer: 0
   chargetime: 2
   glideForce: 20
@@ -6250,6 +6253,23 @@ MonoBehaviour:
   sliding: 0
   grind: 0
   speed: 0
+  m_grounded: 0
+--- !u!114 &114345082870341498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785802785435078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e18c3242e9f48e8a5d9b00f569c98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  Player_DampSpeed: 1
+  Player_Speed: 10
+  Player_Direction: {x: 0, y: 0, z: 0}
+  Update_PlayerVars: 1
 --- !u!136 &136673163637529304
 CapsuleCollider:
   m_ObjectHideFlags: 1

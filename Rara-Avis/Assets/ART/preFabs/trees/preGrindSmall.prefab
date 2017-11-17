@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 64881147741412912}
   m_Layer: 0
   m_Name: smGrindSmall
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

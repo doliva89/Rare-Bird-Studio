@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 64430139271177830}
   m_Layer: 0
   m_Name: smRootLarge (2)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 64735767761748764}
   m_Layer: 0
   m_Name: smRootSmall (3)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 64003941451340290}
   m_Layer: 0
   m_Name: smRootLarge
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 64661443342663682}
   m_Layer: 0
   m_Name: smRootSmall (1)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 64681306422021914}
   m_Layer: 0
   m_Name: smRootSmall
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 64547786915893592}
   m_Layer: 0
   m_Name: smRootSmall (2)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 64447439217300092}
   m_Layer: 0
   m_Name: smRootLarge (1)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 64553567568666300}
   m_Layer: 0
   m_Name: smGrindLarge
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 64106765361233592}
   m_Layer: 0
   m_Name: smClayLump
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

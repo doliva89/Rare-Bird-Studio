@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64394009713313540}
   m_Layer: 0
   m_Name: smRootLarge (3)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 64356171205104552}
   m_Layer: 0
   m_Name: smRootLarge (5)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 64218863169728700}
   m_Layer: 0
   m_Name: smRootLarge (4)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 64927204664470408}
   m_Layer: 0
   m_Name: smRootSmall (5)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 64008999058650494}
   m_Layer: 0
   m_Name: smRootSmall (6)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 64073560706354114}
   m_Layer: 0
   m_Name: smRootSmall (4)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 64878088276602440}
   m_Layer: 0
   m_Name: smClayLump (1)
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

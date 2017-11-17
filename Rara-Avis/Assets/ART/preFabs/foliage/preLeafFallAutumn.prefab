@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114777100396388938}
   m_Layer: 0
   m_Name: smLeafFallAutumn
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1119377177100164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -68.4224, y: 175.35052, z: -141.81778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4654625266925228}
@@ -109,7 +109,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075607301899410}
-  m_Mesh: {fileID: 4300000, guid: c3ebebd3abfe6ae4cb8b743f05fde0a7, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 701edfbe4aabc9d4388457aa618901a2, type: 2}
 --- !u!114 &114777100396388938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,24 +127,24 @@ MonoBehaviour:
   UseDebugMaterial: 0
   DebugMode: 0
   SnapShotColors:
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
   SnapShotAvailable: 1
   BendingModeSelected: 3
   Scale: 2
   hasBeenSaved: 1
-  savePath: Assets/ART/meshes/environment/Foliage/afsMesh/afsMeshLeafFallAutumn.asset
-  fileName: afsMeshLeafFallAutumn.asset
+  savePath: Assets/ART/meshes/environment/Foliage/afsMesh/afsmLeafFallAutumn.asset
+  fileName: afsmLeafFallAutumn.asset
   hasSubmeshes: 0
   mergeSubMeshes: 0
   has2ndUV: 1
@@ -165,14 +165,14 @@ MonoBehaviour:
   simpleTreeConverted: 0
   foliageTreeConverted: 0
   foliageTreeUV4Converted: 0
-  Set1stBendingSelected: 1
+  Set1stBendingSelected: 2
   Mask2ndBendingSelected: 1
   adjustScale: 0
   adjustVertexColors: 0
-  adjustBending: 0
+  adjustBending: 1
   FoldSetBending: 0
   showGizmos: 1
-  maxBendingValueY: 0.1
+  maxBendingValueY: 0
   maxBendingValueX: 0
   curvY:
     serializedVersion: 2
@@ -191,7 +191,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvX:
     serializedVersion: 2
     m_Curve:
@@ -209,7 +209,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvZ:
     serializedVersion: 2
     m_Curve:
@@ -227,7 +227,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   curvRed:
     serializedVersion: 2
     m_Curve:
@@ -303,5 +303,5 @@ MonoBehaviour:
   Set1stBendingAlongY: 1
   Set1stBendingRelative2Pivot: 0
   VertexBlueVals: []
-  VertexBlueValsStored: 0
+  VertexBlueValsStored: 1
   hasChanged: 0
