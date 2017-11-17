@@ -72,7 +72,9 @@ public class Steering : MonoBehaviour {
         velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
 
         transform.position = position + velocity * Time.deltaTime;
-        transform.LookAt(targetPlayer);
+        Vector3 relativePos = target - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+        transform.rotation = rotation;
     }
 
     void Flee(Vector3 target)
@@ -93,7 +95,9 @@ public class Steering : MonoBehaviour {
         velocity = Vector3.ClampMagnitude(velocity + steering, maxSpeed);
 
         transform.position = position + velocity * Time.deltaTime;
-        transform.LookAt(-targetPlayer);
+        Vector3 relativePos = transform.position - target;
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+        transform.rotation = rotation;
     }
 
     void CalculateAhead()
