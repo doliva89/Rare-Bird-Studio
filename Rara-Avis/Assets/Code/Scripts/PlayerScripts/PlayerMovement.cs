@@ -226,10 +226,16 @@ public class PlayerMovement : MonoBehaviour {
             moveDir =  (mvd * steerSpeed )/* * dir*/;
             //float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
             //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
-            
-            rb.AddForce(/*transform.position + */( moveDir  * Time.deltaTime), ForceMode.VelocityChange);
-            
-           print(mvd);
+            if (v <= -0.5f)
+                rb.AddForce((-transform.forward * 5*Time.deltaTime), ForceMode.Force);
+            else
+            rb.AddForce(( moveDir  * Time.deltaTime ), ForceMode.VelocityChange);
+
+            if (Input.GetButton("break")) {
+                rb.AddForce((-transform.forward * 8 * Time.deltaTime), ForceMode.VelocityChange);
+                print("hello");
+            }
+
         }
 
         if (!sliding) {
