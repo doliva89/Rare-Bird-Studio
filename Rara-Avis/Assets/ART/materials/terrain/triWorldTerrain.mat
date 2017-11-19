@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture_1_Normal:
-        m_Texture: {fileID: 2800000, guid: 217d071c382a2ea469b341fd5393d778, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture_1_Roughness:
@@ -32,7 +32,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Texture_2_Colour:
         m_Texture: {fileID: 2800000, guid: 624f6e649f1ae9445843be49d87daa53, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.25, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture_2_Normal:
         m_Texture: {fileID: 2800000, guid: 217d071c382a2ea469b341fd5393d778, type: 3}

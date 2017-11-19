@@ -70,7 +70,7 @@ Material:
     - _BumpScale: 1
     - _CritiasFoliageSupport: 0
     - _Culling: 0
-    - _Cutoff: 0.629
+    - _Cutoff: 0.095
     - _DebugMode: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0

@@ -56,7 +56,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _OutlineWidth: 0.001
-    - _Texture_1_Scale: 0.5
+    - _Texture_1_Scale: 0.25
     - _Texture_2_Scale: 0.1
     - _Texture_3_Scale: 0.5
     m_Colors:
