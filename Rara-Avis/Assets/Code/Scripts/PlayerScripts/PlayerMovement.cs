@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour {
         }
       if(!sliding)
             dust.Play();
-      
+        print(stamina);
     }
 
     void FixedUpdate() {
@@ -181,9 +181,10 @@ public class PlayerMovement : MonoBehaviour {
 
 
         }
-        else {
+        else if (Input.GetButtonUp("Run")) {
             running = false;
-           // stamina = 0;
+            if (stamina >= 3)
+                stamina = 0;
         }
 
 
@@ -193,8 +194,7 @@ public class PlayerMovement : MonoBehaviour {
             else {
                 running = false;
                 movementSpeed = walkSpeed + (Multiplier * speedBonuswalk);
-                if (stamina >= 3)
-                    stamina = 0;
+              
             }
 
         }
