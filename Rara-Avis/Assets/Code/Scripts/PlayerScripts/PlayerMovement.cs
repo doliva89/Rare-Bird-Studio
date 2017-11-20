@@ -108,8 +108,8 @@ public class PlayerMovement : MonoBehaviour {
             movePlayerOnPath(.3f * Multiplier);
           
         }
-      if(!sliding)
-            dust.Play();
+      //if(!sliding)
+           // dust.Play();
         print(stamina);
     }
 
@@ -226,13 +226,12 @@ public class PlayerMovement : MonoBehaviour {
             moveDir =  (mvd * steerSpeed )/* * dir*/;
             //float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
             //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
-            if (v <= -0.5f)
-                rb.AddForce((-transform.forward * 5*Time.deltaTime), ForceMode.Force);
-            else
+          
             rb.AddForce(( moveDir  * Time.deltaTime ), ForceMode.VelocityChange);
 
             if (Input.GetButton("break")) {
-                rb.AddForce((-transform.forward * 8 * Time.deltaTime), ForceMode.VelocityChange);
+                rb.velocity = rb.velocity * 0.99f;
+                //rb.AddForce((-transform.forward * 20 * Time.deltaTime), ForceMode.VelocityChange);
                 print("hello");
             }
 

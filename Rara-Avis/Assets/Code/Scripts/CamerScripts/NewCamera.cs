@@ -70,8 +70,8 @@ public class NewCamera : MonoBehaviour {
 
 
         main.transform.position = Vector3.Lerp(main.transform.position, wantedPosition, Time.deltaTime * damping);
-        //if (speed.sliding) {
-        //    transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, playerRot, Time.deltaTime);
-        //}
+        if (speed.sliding) {
+            transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, playerRot, Time.deltaTime *.5f);
+        }
     }
 }
