@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 655b9b3ca10b376429cb2bbe45dff7bd
+timeCreated: 1511177474
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bird 1
+    100004: down
+    100006: feathersL
+    100008: feathersR
+    100010: feathersRearOver
+    100012: FeathersRearUnder
+    100014: plume
+    100016: ruff
+    100018: TailL3
+    100020: TailR
+    100022: wingL
+    100024: wingR
+    400000: //RootNode
+    400002: Bird 1
+    400004: down
+    400006: feathersL
+    400008: feathersR
+    400010: feathersRearOver
+    400012: FeathersRearUnder
+    400014: plume
+    400016: ruff
+    400018: TailL3
+    400020: TailR
+    400022: wingL
+    400024: wingR
+    2300000: Bird 1
+    2300002: down
+    2300004: feathersL
+    2300006: feathersR
+    2300008: feathersRearOver
+    2300010: FeathersRearUnder
+    2300012: plume
+    2300014: ruff
+    2300016: TailL3
+    2300018: TailR
+    2300020: wingL
+    2300022: wingR
+    3300000: Bird 1
+    3300002: down
+    3300004: feathersL
+    3300006: feathersR
+    3300008: feathersRearOver
+    3300010: FeathersRearUnder
+    3300012: plume
+    3300014: ruff
+    3300016: TailL3
+    3300018: TailR
+    3300020: wingL
+    3300022: wingR
+    4300000: Bird
+    4300002: ruff
+    4300004: plume
+    4300006: TailL3
+    4300008: TailR
+    4300010: wingR
+    4300012: wingL
+    4300014: FeathersRearUnder
+    4300016: feathersRearOver
+    4300018: feathersL
+    4300020: feathersR
+    4300022: down
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
