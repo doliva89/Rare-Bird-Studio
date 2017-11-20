@@ -346,7 +346,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         ////If the player isn't grounded rotate them so their transform up is the same as the worlds up
-        else if (!m_grounded && !sliding )   {
+        else if (!m_grounded && sliding )   {
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, Vector3.up) * transform.rotation;
             targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, /*cam.transform.eulerAngles.y*/currentRot.eulerAngles.y, targetRotation.eulerAngles.z);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime /** (Mathf.Clamp(v + Mathf.Abs(h), 0f, 1))*/ * 10);
