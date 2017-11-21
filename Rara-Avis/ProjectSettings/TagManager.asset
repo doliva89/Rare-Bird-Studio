@@ -9,6 +9,7 @@ TagManager:
   - kid
   - Grind
   - Map
+  - Foliage
   layers:
   - Default
   - TransparentFX
