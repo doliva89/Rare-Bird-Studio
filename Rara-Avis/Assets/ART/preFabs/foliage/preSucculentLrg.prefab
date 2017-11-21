@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4333875746407654}
   m_Layer: 0
   m_Name: preSucculentLrg
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114708822975566954}
   m_Layer: 0
   m_Name: smSucculentLrg
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

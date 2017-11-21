@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4560338576956410}
   m_Layer: 0
   m_Name: preFernSpiral
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114451354388723886}
   m_Layer: 0
   m_Name: smFernSpiral
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

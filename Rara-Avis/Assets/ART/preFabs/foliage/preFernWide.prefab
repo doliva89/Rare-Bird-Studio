@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4079752103333200}
   m_Layer: 0
   m_Name: preFernWide
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114822524156754692}
   m_Layer: 0
   m_Name: smFernWide
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,14 +65,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196792321897668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.05147, y: 175.0214, z: -148.08405}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.025225878, y: 0.50969756, z: -0.028803594, w: 0.85950124}
+  m_LocalPosition: {x: 108.43, y: -19.65, z: 6.11}
+  m_LocalScale: {x: 1.7300072, y: 2.025697, z: 1.7300078}
   m_Children:
   - {fileID: 4007049056607054}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.171, y: 61.287003, z: -1.3670001}
 --- !u!23 &23209592593465678
 MeshRenderer:
   m_ObjectHideFlags: 1

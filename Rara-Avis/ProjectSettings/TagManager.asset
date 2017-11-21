@@ -9,6 +9,7 @@ TagManager:
   - kid
   - Grind
   - Map
+  - Foliage
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - AzureMoonSphere
+  - AzureSkyDome
   - 
   - 
   - 

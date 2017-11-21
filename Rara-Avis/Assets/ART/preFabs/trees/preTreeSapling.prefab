@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4123365944982726}
   m_Layer: 0
   m_Name: preTreeSapling
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114363970274495764}
   m_Layer: 0
   m_Name: smTreeSapling
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,9 +52,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336363619374408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.91767, y: 175.01758, z: -148.94588}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -75.207306, y: 125.52, z: -66.327705}
+  m_LocalScale: {x: 1.3573182, y: 1.3573178, z: 1.3573178}
   m_Children:
   - {fileID: 4297616930555450}
   m_Father: {fileID: 0}

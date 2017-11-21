@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64512587075186576}
   m_Layer: 0
   m_Name: smShroom3d
-  m_TagString: Map
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4987891632366846}
   m_Layer: 0
   m_Name: preShroom3d
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
