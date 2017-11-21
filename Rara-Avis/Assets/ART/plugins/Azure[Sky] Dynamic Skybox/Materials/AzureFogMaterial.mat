@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: AzureFogMaterial
-  m_Shader: {fileID: 4800000, guid: 1cb6a2a8461f8e5418f69b9ba090b2f6, type: 3}
+  m_Shader: {fileID: 4800000, guid: 615a7775e0e0740429a72bc1f02e4ccb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
