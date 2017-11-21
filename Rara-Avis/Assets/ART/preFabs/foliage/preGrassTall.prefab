@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4709442950181368}
   m_Layer: 0
   m_Name: preGrassTall
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114930831487635450}
   m_Layer: 0
   m_Name: smGrassTall
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

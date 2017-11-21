@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114777100396388938}
   m_Layer: 0
   m_Name: smLeafFallAutumn
-  m_TagString: Map
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4943783373138436}
   m_Layer: 0
   m_Name: preLeafFallAutumn
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075607301899410}
-  m_Mesh: {fileID: 4300000, guid: 701edfbe4aabc9d4388457aa618901a2, type: 2}
+  m_Mesh: {fileID: 0}
 --- !u!114 &114777100396388938
 MonoBehaviour:
   m_ObjectHideFlags: 1

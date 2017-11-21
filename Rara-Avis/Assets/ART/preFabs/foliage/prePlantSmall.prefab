@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114636641340654458}
   m_Layer: 0
   m_Name: smPlantSmall
-  m_TagString: Player
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4025060371423402}
   m_Layer: 0
   m_Name: prePlantSmall
-  m_TagString: Untagged
+  m_TagString: Foliage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
