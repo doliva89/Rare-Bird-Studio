@@ -294,6 +294,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2cfde6568de11c438fc75837b57c6b9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &482901121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 482901123}
+  - component: {fileID: 482901122}
+  m_Layer: 0
+  m_Name: BirdHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &482901122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482901121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23340de5ca7559742b0117322a367c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromPlayer: 20
+  bird: {fileID: 1086813160962836, guid: 623324fb397823b42bff8139387854c0, type: 2}
+  spawnTime: 5
+  maxBirds: 10
+  birdSpawnFromPlayer: {x: 0, y: 20, z: 0}
+  maxDistanceToDespawn: 30
+--- !u!4 &482901123
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482901121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.666052, y: 9.988303, z: -19.340734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609579871
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,80 +786,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1548073187
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.031
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -25.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9981027
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.061571185
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -172.94
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-  m_IsPrefabParent: 0
---- !u!1 &1553355830 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 1487520cdb730f341bf9183fbbce5680, type: 3}
-  m_PrefabInternal: {fileID: 1548073187}
---- !u!114 &1553355831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1553355830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88b37b7c389343428fb53db9e85302a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVelocity: 3
-  maxForce: 2
-  maxSpeed: 10
-  mass: 2
-  slowRadius: 3
-  maxSeeAhead: 4
-  maxAvoidanceForce: 3
-  maxSeperation: 2
-  seperationRadius: 4
-  targetPlayerPosition: {x: 0, y: 2, z: 0}
-  whenToFlee: 3
-  whenToStopFleeing: 20
-  fleeing: 0
 --- !u!1 &1697930250 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1227447164556070, guid: a460b8b926322d344822fa37ceea348d,
