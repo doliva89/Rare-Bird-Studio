@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 globalForce;
 
     Vector3 oldPos;
-   
+
     private RaycastHit hit;
     Vector3 newHit;
     Quaternion currentRot;
@@ -69,8 +69,8 @@ public class PlayerMovement : MonoBehaviour {
     float stamina;
     Animator playerAnim;
     private int jump = 0;
+    float varible;
 
-    
     private bool running;
     private bool clicked;
     private bool negativeGravity;
@@ -85,11 +85,11 @@ public class PlayerMovement : MonoBehaviour {
         globalForce = Vector3.zero;
         rb = GetComponent<Rigidbody>();
         playerAnim = GameObject.FindGameObjectWithTag("kid").GetComponent<Animator>();
-       // gravity = .87f;
+        // gravity = .87f;
         cam = Camera.main;
         newHit = Vector3.zero;
-       
-        }
+
+    }
 
     void Update() {
         float v = Input.GetAxis("Vertical");
@@ -98,19 +98,21 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetMouseButton(0) && m_grounded || Input.GetButton("Slide") && m_grounded && !grind) {
             sliding = true;
             running = false;
-            
+
         }
         else if (Input.GetButtonUp("Slide")) {
             sliding = false;
+
         }
         if (grind) {
             pathScript.detectGrind(/*gameObject*/);
             movePlayerOnPath(.3f * Multiplier);
-          
+
         }
-      //if(!sliding)
-           // dust.Play();
-        print(stamina);
+        if (!sliding)
+            dust.Play();
+
+
     }
 
     void FixedUpdate() {
@@ -118,20 +120,20 @@ public class PlayerMovement : MonoBehaviour {
 
         ///Jump();
         ///
-      
-         
 
-      //  print(dust.isPlaying);
+
+
+        //  print(dust.isPlaying);
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-       
+
         blendX = playerAnim.GetFloat("blendX");
         blendY = playerAnim.GetFloat("blendY");
         time += Time.deltaTime;
-      //  if (time >= .5) {
-           // speed = Vector3.Distance(oldPos, transform.position) * 10;
-           // time = 0;
-       // }
+        //  if (time >= .5) {
+        // speed = Vector3.Distance(oldPos, transform.position) * 10;
+        // time = 0;
+        // }
 
         m_grounded = IsGrounded();
         checkForSlopes();
@@ -143,11 +145,11 @@ public class PlayerMovement : MonoBehaviour {
         calculatingMultiplyer();
 
 
-        speed = Vector3.Distance(oldPos, transform.position) ;
+        speed = Vector3.Distance(oldPos, transform.position);
         oldPos = transform.position;
-
+        varible = speed * 10;
         playerAnim.SetBool("jumpIsTrue", !m_grounded);
-       
+        print(varible);
     }
 
 
@@ -173,7 +175,7 @@ public class PlayerMovement : MonoBehaviour {
     void Movement(float x, float v) {
 
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetButton("Run") && m_grounded) {
-           
+
             stamina += Time.deltaTime;
 
             running = true;
@@ -194,7 +196,7 @@ public class PlayerMovement : MonoBehaviour {
             else {
                 running = false;
                 movementSpeed = walkSpeed + (Multiplier * speedBonuswalk);
-              
+
             }
 
         }
@@ -202,37 +204,39 @@ public class PlayerMovement : MonoBehaviour {
             movementSpeed = walkSpeed + (Multiplier * speedBonuswalk); ;
 
         }
-        else 
+        else
             movementSpeed = 0;
 
         if (sliding) {
 
-            float bias = 1, tSpeed =Mathf.Abs( blendY * speed);
+            float bias = 1, tSpeed = Mathf.Abs(blendY * speed);
             bias -= (tSpeed);
-           
+
             playerAnim.SetBool("isSliding", true);
-           
+
             Vector2 input = new Vector2(x, v);
-            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, /*blendY * 10*/ input.magnitude));
+
+            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, input.magnitude));
             float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
-           
+
             dir = Mathf.Clamp01(dir + 0.5f);
-           
+
+
             Debug.DrawRay(transform.position, globalForce.normalized, Color.magenta);
             Debug.DrawRay(transform.position, mvd.normalized, Color.black);
-           // playerAnim.SetFloat("blendX", Vector3.Dot(transform.forward, globalForce.normalized));
+            playerAnim.SetFloat("blendX", x);
             playerAnim.SetFloat("blendY", v + Mathf.Abs(x));
 
-            moveDir =  (mvd * steerSpeed )/* * dir*/;
-            //float rotSpeed = 200, rotScalar = playerAnim.GetFloat("rotVal");
-            //transform.Rotate(new Vector3(0, ((rotSpeed * bias)* Time.deltaTime) * (rotScalar/**speed*/), 0));
-          
-            rb.AddForce(( moveDir  * Time.deltaTime ), ForceMode.VelocityChange);
+            moveDir = (mvd * steerSpeed)/* * dir*/;
+            float rotSpeed = 200, rotScalar = playerAnim.GetFloat("blendX");
+            transform.Rotate(new Vector3(0, ((rotSpeed * bias) * Time.deltaTime) * (rotScalar/**speed*/), 0));
+
+            rb.AddForce((moveDir * Time.deltaTime), ForceMode.VelocityChange);
 
             if (Input.GetButton("break")) {
                 rb.velocity = rb.velocity * 0.99f;
                 //rb.AddForce((-transform.forward * 20 * Time.deltaTime), ForceMode.VelocityChange);
-                print("hello");
+                playerAnim.SetFloat("blendY", -1);
             }
 
         }
@@ -260,7 +264,7 @@ public class PlayerMovement : MonoBehaviour {
             playerAnim.SetBool("failedLanding", false);
 
             gravity = 0.87f;
-            rb.AddForce(transform.up * initialJumpForce + (transform.forward * movementSpeed) , ForceMode.VelocityChange);
+            rb.AddForce(transform.up * initialJumpForce + (transform.forward * movementSpeed), ForceMode.VelocityChange);
         }
 
         if (Input.GetButton("Jump")) {
@@ -276,7 +280,7 @@ public class PlayerMovement : MonoBehaviour {
 
             m_grounded = false;
             running = false;
-           // sliding = false;
+            // sliding = false;
             jump = 1;
             gravity = 0.87f;
             jumpCharger = 0;
@@ -339,17 +343,17 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (m_grounded && sliding) {
-            Quaternion targetRotation = Quaternion.FromToRotation(transform.up,hit.normal) * transform.rotation;
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
 
             targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, currentRot.eulerAngles.y/*targetRotation.eulerAngles.y*/, targetRotation.eulerAngles.z);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, (Time.deltaTime * 20) * (Mathf.Clamp(v + Mathf.Abs(h), -1f, 1)));
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, (Time.deltaTime * 5) * (Mathf.Clamp(v + Mathf.Abs(h), -1f, 1)));
         }
 
         ////If the player isn't grounded rotate them so their transform up is the same as the worlds up
-        else if (!m_grounded && sliding )   {
+        else if (!m_grounded && sliding || !m_grounded && !sliding || hit.transform.gameObject.CompareTag("Grind"))   {
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, Vector3.up) * transform.rotation;
             targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, /*cam.transform.eulerAngles.y*/currentRot.eulerAngles.y, targetRotation.eulerAngles.z);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime /** (Mathf.Clamp(v + Mathf.Abs(h), 0f, 1))*/ * 10);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime /** (Mathf.Clamp(v + Mathf.Abs(h), 0f, 1))*/ * 20);
         }
     }
 
