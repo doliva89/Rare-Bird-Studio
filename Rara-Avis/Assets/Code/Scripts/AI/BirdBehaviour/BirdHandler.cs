@@ -10,6 +10,7 @@ public class BirdHandler : MonoBehaviour {
     public int maxBirds = 10;
     public Vector3 birdSpawnFromPlayer = Vector3.zero;
     public float maxDistanceToDespawn = 30f;
+    public float speedToSpawnBird = 0.2f;
 
     private PlayerMovement player;
     private float time = 0f;
@@ -28,9 +29,9 @@ public class BirdHandler : MonoBehaviour {
 	void Update () {
         time += Time.deltaTime * player.Multiplier;
         birdSpawnPoint = player.transform.TransformPoint(birdSpawnFromPlayer);
+        print("time: " + time);
 
-
-        if (time > spawnTime && player.speed > 0.126f && amountOfBirds != maxBirds)
+        if (time > spawnTime && player.speed > speedToSpawnBird && amountOfBirds != maxBirds)
         {
             SpawnBird();
         }
