@@ -15,12 +15,12 @@ public class Steering : MonoBehaviour {
     public float seperationRadius = 1f;
     public Vector3 targetPlayerPosition = Vector3.zero;
     public float whenToFlee = 2.0f;
-    public float whenToStopFleeing = 20.0f;
+    public float whenToStopFleeing = 40f;
+    public float distance = 0;
 
     private GameObject player;
     private Vector3 ahead, ahead2;
     private Vector3 targetPlayer;
-    private float distance;
     public bool fleeing = false;
 
     // Use this for initialization
@@ -37,7 +37,7 @@ public class Steering : MonoBehaviour {
         targetPlayer = player.transform.TransformPoint(targetPlayerPosition);
         distance = Vector3.Distance(transform.position, targetPlayer);
 
-        if(distance <= whenToFlee) fleeing = true;
+        if(distance <= whenToFlee && player.GetComponent<PlayerMovement>().speed <= 0.124) fleeing = true;
         if (distance >= whenToStopFleeing) fleeing = false;
 
         if(fleeing) Flee(player.transform.position);
