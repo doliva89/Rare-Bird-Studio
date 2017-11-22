@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FallingLeaves_MAT
-  m_Shader: {fileID: 4800000, guid: d0145bb5d76c944f19d18db8ef120be4, type: 3}
+  m_Shader: {fileID: 51, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _BENDINGCONTROLS_LEGACY_VERTEX_COLORS
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
