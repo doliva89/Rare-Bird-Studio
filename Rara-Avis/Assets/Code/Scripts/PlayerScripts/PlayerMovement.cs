@@ -100,9 +100,9 @@ public class PlayerMovement : MonoBehaviour {
             running = false;
 
         }
-        else if (Input.GetButtonUp("Slide")) {
+        else if (Input.GetButtonUp("Slide")  ) {
             sliding = false;
-
+           
         }
         if (grind) {
             pathScript.detectGrind(/*gameObject*/);
@@ -216,7 +216,7 @@ public class PlayerMovement : MonoBehaviour {
 
             Vector2 input = new Vector2(x, v);
 
-            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, input.magnitude));
+            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, input.magnitude * speed));
             float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
 
             dir = Mathf.Clamp01(dir + 0.5f);
@@ -242,7 +242,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (!sliding) {
-
+            rb.velocity = rb.velocity * 0.97f;
             playerAnim.SetBool("isSliding", false);
             //The Player is running
             if (v != 0 || x != 0)
