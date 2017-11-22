@@ -635,7 +635,7 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
+  - m_ConditionMode: 2
     m_ConditionEvent: isSliding
     m_EventTreshold: 0
   - m_ConditionMode: 3
@@ -782,9 +782,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isSliding
     m_EventTreshold: 0
-  - m_ConditionMode: 4
-    m_ConditionEvent: walkSpeed
-    m_EventTreshold: 0.003
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102225590067583524}
   m_Solo: 0
