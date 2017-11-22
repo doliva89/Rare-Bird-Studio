@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4751102922535166}
   - component: {fileID: 33527855306092466}
   - component: {fileID: 23416538145655216}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MoonSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1122021251593546
 GameObject:
   m_ObjectHideFlags: 1
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4135339628655572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sunshaft caster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4912015013627168}
   - component: {fileID: 108657684113170882}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Moon Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,30 +85,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4067861238288686}
   - component: {fileID: 215779373809172190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &1218367536813752
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4361968973277564}
-  - component: {fileID: 20546999217533362}
-  - component: {fileID: 114100278708720408}
-  m_Layer: 8
-  m_Name: MoonCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1272124774917064
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4025319479291912}
   - component: {fileID: 108640623868848146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sun Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,8 +116,24 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4728047881052858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Moonshaft caster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1584844526581084
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4597789419578002}
+  - component: {fileID: 20771209826139130}
+  m_Layer: 9
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4216892076129742}
   - component: {fileID: 114798459426940996}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Standard Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +161,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272124774917064}
-  m_LocalRotation: {x: -0.0000000028588618, y: 0.99785894, z: -0.06540313, w: -0.0000000436178}
+  m_LocalRotation: {x: -0.27372676, y: 0.95459867, z: -0.1129842, w: 0.03239766}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -203,9 +202,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114401700104968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 57000, y: 57000, z: 57000}
-  m_Children: []
+  m_LocalPosition: {x: 0, y: -10502, z: 0}
+  m_LocalScale: {x: 2000, y: 2000, z: 2000}
+  m_Children:
+  - {fileID: 4597789419578002}
   m_Father: {fileID: 4216892076129742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,9 +215,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1737683957256512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 500, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.597948, y: 98.013, z: -71.098656}
+  m_LocalScale: {x: 0.016243352, y: 0.016243318, z: 0.016243318}
   m_Children:
   - {fileID: 4176966285130484}
   - {fileID: 4025319479291912}
@@ -226,19 +226,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4361968973277564
+--- !u!4 &4597789419578002
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218367536813752}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_GameObject: {fileID: 1584844526581084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4751102922535166}
+  m_Father: {fileID: 4176966285130484}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4728047881052858
 Transform:
   m_ObjectHideFlags: 1
@@ -261,8 +261,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4361968973277564}
+  m_Children: []
   m_Father: {fileID: 4912015013627168}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -272,7 +271,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123658475863420}
-  m_LocalRotation: {x: -0.056690633, y: 0.00049473165, z: 0.008712506, w: 0.99835366}
+  m_LocalRotation: {x: -0.10490743, y: -0.029093413, z: 0.28232726, w: 0.9531208}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -281,39 +280,39 @@ Transform:
   m_Father: {fileID: 4216892076129742}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
---- !u!20 &20546999217533362
+--- !u!20 &20771209826139130
 Camera:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218367536813752}
+  m_GameObject: {fileID: 1584844526581084}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
-  far clip plane: 10
+  near clip plane: 0.3
+  far clip plane: 1000
   field of view: 60
-  orthographic: 1
-  orthographic size: 0.75
-  m_Depth: -100
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: ccacbb6f0664acc43869cbcaf8f31955, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
-  m_AllowMSAA: 0
+  m_HDR: 1
+  m_AllowMSAA: 1
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
+  m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
@@ -403,11 +402,11 @@ Light:
   m_GameObject: {fileID: 1272124774917064}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 1
-  m_Color: {r: 0.97063524, g: 0.7970461, b: 0.6733432, a: 1}
+  m_Type: 0
+  m_Color: {r: 0.923795, g: 0.8173559, b: 0.7152698, a: 1}
   m_Intensity: 1.9999998
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 15.16
+  m_SpotAngle: 14
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -426,7 +425,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_FalloffTable:
     m_Table[0]: 0
     m_Table[1]: 0
@@ -453,11 +452,11 @@ Light:
   m_GameObject: {fileID: 1123658475863420}
   m_Enabled: 0
   serializedVersion: 8
-  m_Type: 1
+  m_Type: 0
   m_Color: {r: 0.06423011, g: 0.25051904, b: 0.4852941, a: 1}
   m_Intensity: 0
   m_Range: 10
-  m_SpotAngle: 30
+  m_SpotAngle: 19.1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -476,7 +475,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_FalloffTable:
     m_Table[0]: 0
     m_Table[1]: 0
@@ -495,18 +494,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114100278708720408
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218367536813752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40675a336ab117b47a6ca0d3b92c784e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoonRenderRender: {fileID: 8400000, guid: ccacbb6f0664acc43869cbcaf8f31955, type: 2}
 --- !u!114 &114798459426940996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -525,19 +512,19 @@ MonoBehaviour:
   Azure_ShowCloudTab: 0
   Azure_ShowFogTab: 0
   Azure_ShowLightingTab: 0
-  Azure_ShowOptionsTab: 0
+  Azure_ShowOptionsTab: 1
   Azure_ShowOutputsTab: 0
   Azure_CurveColorField: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   Azure_TimeMode: 0
   Azure_CurveMode: 1
   Azure_DayOfWeek: 0
   Azure_NumberOfDays: 7
-  Azure_Timeline: 6.5
-  Azure_Latitude: 0
+  Azure_Timeline: 6.9
+  Azure_Latitude: -32
   Azure_Longitude: 180
   Azure_DayCycle: 0
   Azure_SetTimeByCurve: 0
-  Azure_TimeOfDayByCurve: 7.8740816
+  Azure_TimeOfDayByCurve: 8.174405
   Azure_DayNightLengthCurve:
     serializedVersion: 2
     m_Curve:
@@ -4358,7 +4345,7 @@ MonoBehaviour:
   Azure_StarfieldPosition: {x: 109, y: 174, z: 135}
   Azure_MoonTexture: {fileID: 8400000, guid: ccacbb6f0664acc43869cbcaf8f31955, type: 2}
   Azure_MoonDiskSize: 0.5
-  Azure_MoonDiskBright: -5.6689906
+  Azure_MoonDiskBright: -6.9988375
   Azure_MoonDiskBrightRange: 100
   Azure_MoonSkyBright: -0.5
   Azure_MoonSkyBrightRange: 50
@@ -7137,7 +7124,7 @@ MonoBehaviour:
   Azure_CloudMode: 2
   Azure_StaticCloudTexture: {fileID: 2800000, guid: 73c8462dd3ad93d4797a72d6cff5ea0f,
     type: 3}
-  Azure_StaticCloudMultiplier: 1.0250967
+  Azure_StaticCloudMultiplier: 1.0545807
   Azure_DynamicCloudTexture: {fileID: 2800000, guid: 74ac6c51c98cfd746b7e52341438e619,
     type: 3}
   Azure_DynamicCloudDensity: 0.75
@@ -10495,7 +10482,7 @@ MonoBehaviour:
   Azure_SunLightIntensity: 1.9999998
   Azure_MoonLightIntensity: 0
   Azure_UnityAmbientSource: 0
-  Azure_AmbientIntensity: 0.9794018
+  Azure_AmbientIntensity: 1.4918011
   Azure_UseReflectionProbe: 0
   Azure_ReflectionProbeRefreshMode: 1
   Azure_ReflectionProbeTimeSlicing: 2
@@ -14196,12 +14183,12 @@ MonoBehaviour:
   Azure_AutomaticSunIntensity: 1
   Azure_AutomaticMoonIntensity: 1
   Azure_PrecomputedSkyGround: 0
-  Azure_GammaCorrection: 1
-  Azure_CullMode: 2
-  Azure_ShaderMode: 1
-  Azure_SkyMode: 1
+  Azure_GammaCorrection: 1.33
+  Azure_CullMode: 1
+  Azure_ShaderMode: 0
+  Azure_SkyMode: 0
   Azure_AutomaticSkydomeSize: 1
-  Azure_SkydomeSizePercentage: 90
+  Azure_SkydomeSizePercentage: 100
   Azure_SkydomeSize: 1000
   Azure_OutputCurveList: []
   Azure_OutputGradientList: []
@@ -14228,7 +14215,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_IntensityMultiplier: 1
   m_BlendDistance: 1
   m_HDR: 1
