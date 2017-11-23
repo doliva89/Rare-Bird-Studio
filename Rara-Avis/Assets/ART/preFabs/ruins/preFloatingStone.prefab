@@ -51,11 +51,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7c3a95500bd1de74ba4318ffee1edd73, type: 2}
+  - {fileID: 2100000, guid: 4f4c298ec8d7c4445bdf2ad362c911fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66,6 +67,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -80,7 +82,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168801086681276}
-  m_Mesh: {fileID: 4300002, guid: e795fbe637991924f9a9fc45b8b3b241, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 12d02a108785c92408135ac346622103, type: 3}
 --- !u!95 &95992510036203940
 Animator:
   serializedVersion: 3
@@ -89,7 +91,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168801086681276}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e795fbe637991924f9a9fc45b8b3b241, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 12d02a108785c92408135ac346622103, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
