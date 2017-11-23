@@ -123,18 +123,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1607875558000400
+--- !u!1 &1516873788780322
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4743344256844868}
-  - component: {fileID: 20854370407813382}
-  - component: {fileID: 114892889527789006}
+  - component: {fileID: 4732679153443508}
+  - component: {fileID: 20589780544314946}
+  - component: {fileID: 114734189910576058}
   m_Layer: 9
-  m_Name: GameObject
+  m_Name: SkyCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272124774917064}
-  m_LocalRotation: {x: -0.27372676, y: 0.95459867, z: -0.1129842, w: 0.03239766}
+  m_LocalRotation: {x: -0.2755429, y: 0.9609323, z: -0.025162863, w: 0.007215296}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -204,9 +204,9 @@ Transform:
   m_GameObject: {fileID: 1114401700104968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -10502, z: 0}
-  m_LocalScale: {x: 2000, y: 2000, z: 2000}
+  m_LocalScale: {x: 4000, y: 4000, z: 4000}
   m_Children:
-  - {fileID: 4743344256844868}
+  - {fileID: 4732679153443508}
   m_Father: {fileID: 4216892076129742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -240,12 +240,12 @@ Transform:
   m_Father: {fileID: 4912015013627168}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4743344256844868
+--- !u!4 &4732679153443508
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1607875558000400}
+  m_GameObject: {fileID: 1516873788780322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -272,7 +272,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123658475863420}
-  m_LocalRotation: {x: -0.10490743, y: -0.029093413, z: 0.28232726, w: 0.9531208}
+  m_LocalRotation: {x: -0.016817622, y: -0.004663946, z: 0.28397208, w: 0.9586737}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -281,12 +281,12 @@ Transform:
   m_Father: {fileID: 4216892076129742}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
---- !u!20 &20854370407813382
+--- !u!20 &20589780544314946
 Camera:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1607875558000400}
+  m_GameObject: {fileID: 1516873788780322}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -305,7 +305,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 768
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -404,8 +404,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.923795, g: 0.8173559, b: 0.7152698, a: 1}
-  m_Intensity: 1.9999998
+  m_Color: {r: 1, g: 0.6823529, b: 0.20588237, a: 1}
+  m_Intensity: 0.8876672
   m_Range: 15.16
   m_SpotAngle: 14
   m_CookieSize: 10
@@ -495,6 +495,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114734189910576058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516873788780322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30777ed11f18284088d56a9a2cc4c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 0}
 --- !u!114 &114798459426940996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -510,22 +522,22 @@ MonoBehaviour:
   Azure_ShowObjectsAndMaterialsTab: 0
   Azure_ShowScatteringTab: 0
   Azure_ShowNightSkyTab: 0
-  Azure_ShowCloudTab: 0
-  Azure_ShowFogTab: 0
+  Azure_ShowCloudTab: 1
+  Azure_ShowFogTab: 1
   Azure_ShowLightingTab: 0
   Azure_ShowOptionsTab: 1
   Azure_ShowOutputsTab: 0
   Azure_CurveColorField: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   Azure_TimeMode: 0
   Azure_CurveMode: 1
-  Azure_DayOfWeek: 0
+  Azure_DayOfWeek: 3
   Azure_NumberOfDays: 7
-  Azure_Timeline: 6.9
+  Azure_Timeline: 6.2
   Azure_Latitude: -32
   Azure_Longitude: 180
   Azure_DayCycle: 0
   Azure_SetTimeByCurve: 0
-  Azure_TimeOfDayByCurve: 8.174405
+  Azure_TimeOfDayByCurve: 7.64884
   Azure_DayNightLengthCurve:
     serializedVersion: 2
     m_Curve:
@@ -569,16 +581,16 @@ MonoBehaviour:
   Azure_SkyMaterial: {fileID: 2100000, guid: c4d1b101baf611446b44ce7e963a5c84, type: 2}
   Azure_FogMaterial: {fileID: 2100000, guid: 1d9e005bfe151f24caaaf90623baf117, type: 2}
   Azure_SkyModel: 0
-  Azure_Rayleigh: 2
-  Azure_Mie: 5
+  Azure_Rayleigh: 1.5
+  Azure_Mie: 0
   Azure_Kr: 8.4
   Azure_Km: 1.25
   Azure_SunIntensity: 35
   Azure_SkyDarkness: 0.5
   Azure_NightIntensity: 1
   Azure_Exposure: 2
-  Azure_SunDiskSize: 500
-  Azure_SunDiskPropagation: 1.5
+  Azure_SunDiskSize: 329.375
+  Azure_SunDiskPropagation: 4.9793134
   Azure_SunMoonLightSpeed: 50
   Azure_ComputeMode: 0
   Azure_SkyColor: {r: 0.52205884, g: 0.52205884, b: 0.52205884, a: 1}
@@ -4340,13 +4352,13 @@ MonoBehaviour:
     type: 3}
   Azure_StarfieldIntensity: 0
   Azure_StarfieldSpaceIntensity: 2.5
-  Azure_MilkyWayIntensity: 0.1625061
+  Azure_MilkyWayIntensity: 0.5
   Azure_MilkyWaySpaceIntensity: 1
   Azure_StarfieldColorBalance: {x: 1, y: 1.5, z: 2}
   Azure_StarfieldPosition: {x: 109, y: 174, z: 135}
   Azure_MoonTexture: {fileID: 8400000, guid: ccacbb6f0664acc43869cbcaf8f31955, type: 2}
   Azure_MoonDiskSize: 0.5
-  Azure_MoonDiskBright: -6.9988375
+  Azure_MoonDiskBright: -4.036555
   Azure_MoonDiskBrightRange: 100
   Azure_MoonSkyBright: -0.5
   Azure_MoonSkyBrightRange: 50
@@ -7125,12 +7137,12 @@ MonoBehaviour:
   Azure_CloudMode: 2
   Azure_StaticCloudTexture: {fileID: 2800000, guid: 73c8462dd3ad93d4797a72d6cff5ea0f,
     type: 3}
-  Azure_StaticCloudMultiplier: 1.0545807
+  Azure_StaticCloudMultiplier: 1.003157
   Azure_DynamicCloudTexture: {fileID: 2800000, guid: 74ac6c51c98cfd746b7e52341438e619,
     type: 3}
-  Azure_DynamicCloudDensity: 0.75
-  Azure_DynamicCloudDirection: 1
-  Azure_DynamicCloudSpeed: 0.1
+  Azure_DynamicCloudDensity: 0.536451
+  Azure_DynamicCloudDirection: -1.68
+  Azure_DynamicCloudSpeed: 0.01
   Azure_StaticCloudMultiplierCurve:
   - serializedVersion: 2
     m_Curve:
@@ -8812,16 +8824,16 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: -1
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
+      time: -0.9916649
+      value: 0.4375
+      inSlope: 2.5
+      outSlope: 2.5
       tangentMode: 0
     - serializedVersion: 2
       time: 1
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
+      value: 0.71875
+      inSlope: 2.5
+      outSlope: 2.5
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -10480,10 +10492,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Azure_SunLightIntensity: 1.9999998
+  Azure_SunLightIntensity: 0.8876672
   Azure_MoonLightIntensity: 0
   Azure_UnityAmbientSource: 0
-  Azure_AmbientIntensity: 1.4918011
+  Azure_AmbientIntensity: 0.36233443
   Azure_UseReflectionProbe: 0
   Azure_ReflectionProbeRefreshMode: 1
   Azure_ReflectionProbeTimeSlicing: 2
@@ -14193,18 +14205,6 @@ MonoBehaviour:
   Azure_SkydomeSize: 1000
   Azure_OutputCurveList: []
   Azure_OutputGradientList: []
---- !u!114 &114892889527789006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1607875558000400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f30777ed11f18284088d56a9a2cc4c6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  main: {fileID: 0}
 --- !u!215 &215779373809172190
 ReflectionProbe:
   m_ObjectHideFlags: 1
