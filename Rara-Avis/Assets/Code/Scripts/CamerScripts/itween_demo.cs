@@ -44,12 +44,12 @@ public class itween_demo : MonoBehaviour {
     public void moveAlongPath(float speed /*GameObject player*/) {
 
         if (onPath) {
-            if (speed > 0) {
+            //if (speed > 0) {
                 minPercent += speed * Time.deltaTime;
                 if (minPercent > current)
                     current = minPercent;
                 iTween.PutOnPath(player, grind, current);
-            }
+           // }
             //grindDetect.grind = false;
         }
     }
