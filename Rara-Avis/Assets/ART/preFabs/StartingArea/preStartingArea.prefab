@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4481839597729182}
   - component: {fileID: 33713300900290318}
   - component: {fileID: 23471203488325088}
-  - component: {fileID: 95081016573060566}
   m_Layer: 0
   m_Name: preStartingArea
   m_TagString: Untagged
@@ -57,8 +56,8 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: e3eeda467595bc241824d60daf61f7ac, type: 2}
   - {fileID: 2100000, guid: d1f4450b5d7c0c94fa275ffa1a53b5c9, type: 2}
-  - {fileID: 2100000, guid: 0caac08b655b4e54180cd8dd0d4ab7d7, type: 2}
-  - {fileID: 2100000, guid: a74df701bbdff304986ea2666f38989c, type: 2}
+  - {fileID: 2100000, guid: e941f0019cb97d3438f812ff61486950, type: 2}
+  - {fileID: 2100000, guid: 018e4fe1761446842b62d04254f09ba5, type: 2}
   - {fileID: 2100000, guid: a1fd6756c3b1387488a87423ea86cb7e, type: 2}
   - {fileID: 2100000, guid: 8e036ab538b34b241bd46c84a26cf782, type: 2}
   m_StaticBatchInfo:
@@ -85,21 +84,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220870379711316}
-  m_Mesh: {fileID: 4300002, guid: f29da7446bb074245a8a29e3d4a359bd, type: 3}
---- !u!95 &95081016573060566
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220870379711316}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: f29da7446bb074245a8a29e3d4a359bd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 4300000, guid: f29da7446bb074245a8a29e3d4a359bd, type: 3}
