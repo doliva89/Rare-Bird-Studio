@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour {
 
-
-
 	public void StartGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("main");
+    }
+
+    public void CreditsScreen()
+    {
+        SceneManager.LoadScene("CreditsScreen");
     }
 }
