@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135366407591263742}
   - component: {fileID: 114431519700347638}
   - component: {fileID: 114930831487635450}
+  - component: {fileID: 205917363314519528}
   m_Layer: 0
   m_Name: smGrassTall
   m_TagString: Foliage
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1891776271830020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06796921, z: 0.11968472}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8717157, y: 0.8717157, z: 0.8717157}
   m_Children: []
   m_Father: {fileID: 4709442950181368}
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672683795169974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.071, y: 175.22955, z: -144.468}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4148416957269846}
@@ -1140,3 +1141,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.81
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &205917363314519528
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891776271830020}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.44329518, z: 0}
+  m_Size: 1.6211727
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.10065932
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23340619566405938}
+  m_Enabled: 1
