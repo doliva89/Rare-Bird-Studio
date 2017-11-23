@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 33596882478645966}
   - component: {fileID: 23606356619587250}
   - component: {fileID: 114425577160724828}
+  - component: {fileID: 205018992550539284}
   m_Layer: 0
   m_Name: smLeafFallGreen
   m_TagString: Foliage
@@ -305,3 +306,20 @@ MonoBehaviour:
   VertexBlueVals: []
   VertexBlueValsStored: 1
   hasChanged: 0
+--- !u!205 &205018992550539284
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1674924248408862}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.027976751, y: 0.06576407, z: 0.020522237}
+  m_Size: 1.5082204
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.09832953
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23606356619587250}
+  m_Enabled: 1

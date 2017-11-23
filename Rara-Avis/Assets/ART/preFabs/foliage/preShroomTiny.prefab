@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135287045212017158}
   - component: {fileID: 114385216585083626}
   - component: {fileID: 114123779298934786}
+  - component: {fileID: 205633195419487268}
   m_Layer: 0
   m_Name: smShroomTiny
   m_TagString: Foliage
@@ -337,3 +338,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: -0.009142809, y: 0.0458265, z: -0.007755231}
+--- !u!205 &205633195419487268
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227647513076738}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.009142809, y: 0.0458265, z: -0.007755235}
+  m_Size: 0.19565216
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.099828824
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23350063449165576}
+  m_Enabled: 1

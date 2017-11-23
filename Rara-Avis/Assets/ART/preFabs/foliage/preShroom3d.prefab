@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33793539117358180}
   - component: {fileID: 23284821238394386}
   - component: {fileID: 64512587075186576}
+  - component: {fileID: 205021378979825702}
   m_Layer: 0
   m_Name: smShroom3d
   m_TagString: Foliage
@@ -124,3 +125,20 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 4e71f192ecf32194fa649b2933bd847c, type: 3}
+--- !u!205 &205021378979825702
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550344680531754}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.74692583, z: 0.00000011920929}
+  m_Size: 1.8097394
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09585341
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23284821238394386}
+  m_Enabled: 1

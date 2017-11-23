@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135750409684965766}
   - component: {fileID: 114291723126537020}
   - component: {fileID: 114046347560599886}
+  - component: {fileID: 205110660880560836}
   m_Layer: 0
   m_Name: smRedLeaf
   m_TagString: Foliage
@@ -359,3 +360,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.28
   m_Center: {x: -0.0018633455, y: 0.12722619, z: -0.05}
+--- !u!205 &205110660880560836
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834806470046556}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0018633604, y: 0.12722619, z: 0.013245702}
+  m_Size: 0.80090594
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09536463
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23134843359313528}
+  m_Enabled: 1

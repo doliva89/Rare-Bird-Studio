@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114596356307867458}
   - component: {fileID: 135904538092334822}
   - component: {fileID: 114809628956477584}
+  - component: {fileID: 205691291180006870}
   m_Layer: 0
   m_Name: smShroomFarm
   m_TagString: Foliage
@@ -389,3 +390,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0.000000037252903, y: 0.09808188, z: 0}
+--- !u!205 &205691291180006870
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854173263341660}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.000000029802322, y: 0.09808188, z: 0}
+  m_Size: 0.35121775
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.10133935
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23995286693989720}
+  m_Enabled: 1

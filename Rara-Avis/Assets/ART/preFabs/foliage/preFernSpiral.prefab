@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135587419427685852}
   - component: {fileID: 114456111185696902}
   - component: {fileID: 114451354388723886}
+  - component: {fileID: 205439221470273264}
   m_Layer: 0
   m_Name: smFernSpiral
   m_TagString: Foliage
@@ -606,3 +607,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8249851
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &205439221470273264
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734042615971626}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.005847454, y: 0.30822366, z: -0.049245298}
+  m_Size: 1.6499702
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.099828824
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23094355977598386}
+  m_Enabled: 1

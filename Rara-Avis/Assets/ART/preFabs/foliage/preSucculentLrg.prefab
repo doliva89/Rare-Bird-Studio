@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 136078748995562532}
   - component: {fileID: 114864592995907318}
   - component: {fileID: 114708822975566954}
+  - component: {fileID: 205720720912180074}
   m_Layer: 0
   m_Name: smSucculentLrg
   m_TagString: Foliage
@@ -652,3 +653,20 @@ CapsuleCollider:
   m_Height: 0.62688345
   m_Direction: 1
   m_Center: {x: 0.02, y: 0.27674618, z: 0.03}
+--- !u!205 &205720720912180074
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382869704751814}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.05101806, y: 0.27674618, z: -0.00000029802322}
+  m_Size: 0.62688345
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09536463
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23332549660762080}
+  m_Enabled: 1

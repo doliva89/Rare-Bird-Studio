@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 136567397396194480}
   - component: {fileID: 114244502779963386}
   - component: {fileID: 114636641340654458}
+  - component: {fileID: 205896492898260128}
   m_Layer: 0
   m_Name: smPlantSmall
   m_TagString: Foliage
@@ -376,3 +377,20 @@ CapsuleCollider:
   m_Height: 0.5796335
   m_Direction: 1
   m_Center: {x: 0.006094441, y: 0.27341372, z: 0.009100333}
+--- !u!205 &205896492898260128
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264178708642244}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.006094441, y: 0.27341372, z: 0.009100333}
+  m_Size: 0.5796335
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09684146
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23783936362958840}
+  m_Enabled: 1

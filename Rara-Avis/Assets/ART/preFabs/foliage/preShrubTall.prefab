@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114946477687466114}
   - component: {fileID: 136351644162477192}
   - component: {fileID: 114443892586784264}
+  - component: {fileID: 205774535169918982}
   m_Layer: 0
   m_Name: smShrubTall
   m_TagString: Foliage
@@ -560,3 +561,20 @@ CapsuleCollider:
   m_Height: 1.05
   m_Direction: 1
   m_Center: {x: -0.03, y: 0.62772936, z: -0.06}
+--- !u!205 &205774535169918982
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648326694810458}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.05103761, y: 0.62772936, z: 0.0037161112}
+  m_Size: 1.4526821
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.099828824
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23054175362455554}
+  m_Enabled: 1
