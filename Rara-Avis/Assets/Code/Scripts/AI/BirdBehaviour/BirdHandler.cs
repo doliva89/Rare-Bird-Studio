@@ -29,7 +29,6 @@ public class BirdHandler : MonoBehaviour {
 	void Update () {
         time += Time.deltaTime * player.Multiplier;
         birdSpawnPoint = player.transform.TransformPoint(birdSpawnFromPlayer);
-        print("time: " + time);
 
         if (time > spawnTime && player.speed > speedToSpawnBird && amountOfBirds != maxBirds)
         {
@@ -44,7 +43,6 @@ public class BirdHandler : MonoBehaviour {
 
     void SpawnBird()
     {
-        print("SPAWN");
         time = 0;
         birds.Add(Instantiate(bird, birdSpawnPoint, Quaternion.identity) as GameObject);
         amountOfBirds += 1;
