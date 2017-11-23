@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 moveDir;
     Vector3 slidingForce;
     Vector3 globalForce;
-
+    CapsuleCollider capColl;
     Vector3 oldPos;
 
     private RaycastHit hit;
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour {
         // gravity = .87f;
         cam = Camera.main;
         newHit = Vector3.zero;
-
+        capColl = GetComponent<CapsuleCollider>();
     }
 
     void Update() {
@@ -105,14 +105,15 @@ public class PlayerMovement : MonoBehaviour {
            
         }
         if (grind) {
+            
             pathScript.detectGrind(/*gameObject*/);
-            movePlayerOnPath(.3f * Multiplier);
+            movePlayerOnPath(.25f);
 
         }
-        if (!sliding)
-            dust.Play();
+        //if (!sliding)
+        //    dust.Play();
 
-
+      //  print(capColl.material.staticFriction);
     }
 
     void FixedUpdate() {
@@ -129,18 +130,10 @@ public class PlayerMovement : MonoBehaviour {
 
         blendX = playerAnim.GetFloat("blendX");
         blendY = playerAnim.GetFloat("blendY");
-        time += Time.deltaTime;
-        //  if (time >= .5) {
-        // speed = Vector3.Distance(oldPos, transform.position) * 10;
-        // time = 0;
-        // }
 
         m_grounded = IsGrounded();
         checkForSlopes();
         Movement(h, v);
-        //  Landing();
-
-        //checkForSlopes();
         calculatingAngles();
         calculatingMultiplyer();
 
@@ -149,7 +142,7 @@ public class PlayerMovement : MonoBehaviour {
         oldPos = transform.position;
         varible = speed * 10;
         playerAnim.SetBool("jumpIsTrue", !m_grounded);
-        print(varible);
+       
     }
 
 
@@ -209,6 +202,8 @@ public class PlayerMovement : MonoBehaviour {
 
         if (sliding) {
 
+             //capColl.material.dynamicFriction = .9f;
+             //capColl.material.staticFriction = 0.9f;
             float bias = 1, tSpeed = Mathf.Abs(blendY * speed);
             bias -= (tSpeed);
 
@@ -216,7 +211,7 @@ public class PlayerMovement : MonoBehaviour {
 
             Vector2 input = new Vector2(x, v);
 
-            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, input.magnitude * speed));
+            Vector3 mvd = transform.TransformDirection(new Vector3(0, 0, input.magnitude /** speed*/));
             float dir = Vector3.Dot(globalForce.normalized, mvd.normalized);
 
             dir = Mathf.Clamp01(dir + 0.5f);
@@ -294,6 +289,7 @@ public class PlayerMovement : MonoBehaviour {
             //Gravity gets lighter
             if (Input.GetKey(KeyCode.E) && chargetimer < chargetime && !sliding || Input.GetButton("Glide") && chargetimer < chargetime && !sliding) {
                 gravity += plusGravity;
+                playerAnim.SetBool("IsGliding", true);
                 //Physics.gravity = new Vector3(0, gravity, 0);
                 rb.velocity = glideForce * transform.forward;
                 // rb.AddForce(transform.forward * 10, ForceMode.VelocityChange);
@@ -303,6 +299,7 @@ public class PlayerMovement : MonoBehaviour {
             //Gravity gets heavier
             if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonUp("Glide") || chargetimer >= 2) {
                 gravity -= minusGravity;
+                playerAnim.SetBool("IsGliding", false);
             }
 
 
@@ -444,7 +441,7 @@ public class PlayerMovement : MonoBehaviour {
                     if (hitForLanding.transform.tag == "Grind") {
                         path = hitForLanding.transform.gameObject.GetComponentInParent<itween_demo>().pathName;
                         pathScript = hitForLanding.transform.gameObject.GetComponentInParent<itween_demo>();
-
+                        playerAnim.SetBool("IsGrinding", true);
                     }
                 }
                 //Outside of above range is a failed click and landing
@@ -464,8 +461,8 @@ public class PlayerMovement : MonoBehaviour {
         pathScript.moveAlongPath(v/*, gameObject*/);
         pathScript.endGrind(this);
         if (!pathScript.onPath) {
-           
-            rb.AddForce(pathScript.gameObject.transform.forward * (speed * Multiplier), ForceMode.Impulse);
+            playerAnim.SetBool("IsGrinding", false);
+            rb.AddForce(pathScript.gameObject.transform.forward * ( 20/.25f ), ForceMode.Impulse);
             path = null;
             pathScript = null;
         }
