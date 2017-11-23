@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 114242953946363420}
   m_Layer: 0
   m_Name: preGrindSmall
-  m_TagString: Untagged
+  m_TagString: Grind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,8 +142,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411835551127024}
-  m_LocalRotation: {x: 0.1251634, y: -0.2709593, z: 0.03555856, w: 0.9537562}
-  m_LocalPosition: {x: -12.359333, y: 18.526306, z: -31.46283}
+  m_LocalRotation: {x: 0.16026212, y: 0.22180766, z: -0.01676512, w: 0.9616841}
+  m_LocalPosition: {x: -152.82187, y: 156.92938, z: -97.82538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4936490157565784}
@@ -155,7 +155,7 @@ Transform:
   - {fileID: 4113763602925156}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 14.953001, y: -31.719002, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.402, y: 26.356, z: 2.3470001}
 --- !u!4 &4097804997827032
 Transform:
   m_ObjectHideFlags: 1

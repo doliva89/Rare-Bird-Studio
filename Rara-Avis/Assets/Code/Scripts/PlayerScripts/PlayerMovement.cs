@@ -105,7 +105,8 @@ public class PlayerMovement : MonoBehaviour {
            
         }
         if (grind) {
-            
+            playerAnim.SetBool("IsGrinding", true);
+
             pathScript.detectGrind(/*gameObject*/);
             movePlayerOnPath(.25f);
 
@@ -178,7 +179,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (Input.GetButtonUp("Run")) {
             running = false;
-            if (stamina >= 3)
+            if (stamina >= 2)
                 stamina = 0;
         }
 
@@ -445,12 +446,12 @@ public class PlayerMovement : MonoBehaviour {
                     }
                 }
                 //Outside of above range is a failed click and landing
-                if (hitForLanding.distance > failGrindClickMax && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind" || hitForLanding.distance < failGrindClickMin && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind") {
-                    jump = 1;
-                    clicked = true;
+                //if (hitForLanding.distance > failGrindClickMax && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind" || hitForLanding.distance < failGrindClickMin && Input.GetButtonDown("LandGrind") && hit.collider.tag == "Grind") {
+                //    jump = 1;
+                //    clicked = true;
 
-                    playerAnim.SetBool("failedLanding", true);
-                }
+                //    playerAnim.SetBool("failedLanding", true);
+                //}
             }
         }
 
