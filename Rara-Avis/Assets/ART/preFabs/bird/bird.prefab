@@ -891,17 +891,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88b37b7c389343428fb53db9e85302a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVelocity: 4
+  maxVelocity: 6
   maxForce: 3
   maxSpeed: 10
-  mass: 2
+  mass: 3
   slowRadius: 3
   maxSeeAhead: 4
   maxAvoidanceForce: 3
   maxSeperation: 2
-  seperationRadius: 4
-  targetPlayerPosition: {x: 0, y: 2, z: 0}
-  whenToFlee: 2
-  whenToStopFleeing: 40
+  seperationRadius: 7
+  targetPlayerPosition: {x: 0, y: 1.5, z: 0}
+  whenToFlee: 1
+  whenToStopFleeing: 50
   distance: 0
   fleeing: 0

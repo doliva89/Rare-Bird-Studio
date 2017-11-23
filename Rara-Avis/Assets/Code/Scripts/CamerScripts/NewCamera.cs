@@ -52,7 +52,7 @@ public class NewCamera : MonoBehaviour {
 
         // cast the bumper ray out from rear and check to see if there is anything behind
         if (Physics.Raycast(ray, out hit, Vector3.Distance(transform.position, transform.position + transform.TransformDirection(0, 0, -distance)))
-            && hit.transform != transform && !hit.transform.gameObject.CompareTag("Player")) // ignore ray-casts that hit the user. DR
+            && hit.transform != transform && !hit.transform.gameObject.CompareTag("Player") && !hit.transform.gameObject.CompareTag("Foliage")) // ignore ray-casts that hit the user. DR
         {
             float dist = Vector3.Distance(hit.point, transform.position);
             wantedPosition = ray.GetPoint(dist - 0.5f);
@@ -71,7 +71,7 @@ public class NewCamera : MonoBehaviour {
 
         main.transform.position = Vector3.Lerp(main.transform.position, wantedPosition, Time.deltaTime * damping);
         if (speed.sliding) {
-            transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, playerRot, Time.deltaTime *.5f);
+            transform.rotation = /*transform.rotation;*/Quaternion.Slerp(transform.rotation, playerRot, Time.deltaTime *.7f);
         }
     }
 }

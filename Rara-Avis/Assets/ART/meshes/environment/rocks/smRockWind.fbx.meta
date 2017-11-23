@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 78910e4300bd69c44971bfb9e549e829
-timeCreated: 1508473489
-licenseType: Pro
+guid: dbb0acffb0e693c45916865f057838d6
+timeCreated: 1511345245
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -10,8 +10,9 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: rockWind
+    6400000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -39,7 +40,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -60,7 +61,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

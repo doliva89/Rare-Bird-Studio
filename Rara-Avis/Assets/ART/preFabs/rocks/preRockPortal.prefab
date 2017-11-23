@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4432018186193442}
   - component: {fileID: 33873519583605700}
   - component: {fileID: 23444011374857846}
+  - component: {fileID: 64840474216378992}
   m_Layer: 0
   m_Name: smRockPortal
   m_TagString: Untagged
@@ -108,4 +109,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1218114922897452}
+  m_Mesh: {fileID: 4300000, guid: 4eeca338a3c6caf44861b477adcb1ed4, type: 3}
+--- !u!64 &64840474216378992
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218114922897452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4eeca338a3c6caf44861b477adcb1ed4, type: 3}
