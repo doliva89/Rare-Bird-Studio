@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33153116969490318}
   - component: {fileID: 23187495013459296}
   - component: {fileID: 64168941234818682}
+  - component: {fileID: 205344838632021738}
   m_Layer: 0
   m_Name: smBurmLong
   m_TagString: Map
@@ -41,7 +42,7 @@ GameObject:
   - component: {fileID: 23386399412470052}
   m_Layer: 0
   m_Name: smBurmBrickShort
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 23685325312009704}
   m_Layer: 0
   m_Name: smBurmBrickShort (6)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +76,7 @@ GameObject:
   - component: {fileID: 23146811323512282}
   m_Layer: 0
   m_Name: smBurmBrickShort (9)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +93,7 @@ GameObject:
   - component: {fileID: 23233392466122790}
   m_Layer: 0
   m_Name: smBurmBrickLong (7)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +110,7 @@ GameObject:
   - component: {fileID: 23268653539910956}
   m_Layer: 0
   m_Name: smBurmBrickLong (1)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +127,7 @@ GameObject:
   - component: {fileID: 23102824301432694}
   m_Layer: 0
   m_Name: smBurmBrickLong (6)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +159,7 @@ GameObject:
   - component: {fileID: 23824063094147998}
   m_Layer: 0
   m_Name: smBurmBrickLong (5)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +176,7 @@ GameObject:
   - component: {fileID: 23069093978888602}
   m_Layer: 0
   m_Name: smBurmBrickShort (10)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +193,7 @@ GameObject:
   - component: {fileID: 23212443408754274}
   m_Layer: 0
   m_Name: smBurmBrickLong (2)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +210,7 @@ GameObject:
   - component: {fileID: 23613482033562242}
   m_Layer: 0
   m_Name: smBurmBrickLong
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,7 +227,7 @@ GameObject:
   - component: {fileID: 23944618758914990}
   m_Layer: 0
   m_Name: smBurmBrickShort (11)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +244,7 @@ GameObject:
   - component: {fileID: 23272258969699008}
   m_Layer: 0
   m_Name: smBurmBrickLong (8)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +261,7 @@ GameObject:
   - component: {fileID: 23766818211131824}
   m_Layer: 0
   m_Name: smBurmBrickShort (12)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +278,7 @@ GameObject:
   - component: {fileID: 23089170071584968}
   m_Layer: 0
   m_Name: smBurmBrickShort (8)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,7 +295,7 @@ GameObject:
   - component: {fileID: 23315253406158506}
   m_Layer: 0
   m_Name: smBurmBrickShort (7)
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,9 +488,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495454778861146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.04894167, y: 0.8989652, z: 0.154884, w: 0.4067891}
+  m_LocalPosition: {x: 14.76, y: 41.07, z: -17.75}
+  m_LocalScale: {x: 1.1490856, y: 1, z: 1}
   m_Children:
   - {fileID: 4470511467235082}
   - {fileID: 4737727101507514}
@@ -509,7 +510,7 @@ Transform:
   - {fileID: 4302435390286496}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -18.559, y: 130.93001, z: 2.298}
 --- !u!4 &4894804134319298
 Transform:
   m_ObjectHideFlags: 1
@@ -1174,3 +1175,20 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 2238892aafdcd9b41a035e8c5fd5bf80, type: 3}
+--- !u!205 &205344838632021738
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004055529191104}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.83348846, y: -0.9881191, z: -22.016506}
+  m_Size: 72.06492
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.10818713
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23187495013459296}
+  m_Enabled: 1

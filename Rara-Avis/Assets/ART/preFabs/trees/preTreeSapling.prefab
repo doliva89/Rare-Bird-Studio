@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4123365944982726}
+  - component: {fileID: 114126444222946290}
   m_Layer: 0
   m_Name: preTreeSapling
   m_TagString: Foliage
@@ -53,9 +54,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336363619374408}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -75.207306, y: 125.52, z: -66.327705}
-  m_LocalScale: {x: 1.3573182, y: 1.3573178, z: 1.3573178}
+  m_LocalRotation: {x: -0.013097842, y: -0.49436355, z: 0.015904585, w: 0.8690111}
+  m_LocalPosition: {x: -53.52139, y: 127.31128, z: -56.97538}
+  m_LocalScale: {x: 2.1090093, y: 2.1090088, z: 2.1090093}
   m_Children:
   - {fileID: 4297616930555450}
   m_Father: {fileID: 0}
@@ -113,6 +114,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948439434380226}
   m_Mesh: {fileID: 4300000, guid: fe08d0ef1dd0681498b0ec2bde2f914f, type: 2}
+--- !u!114 &114126444222946290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336363619374408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832f3d50a115d4dacbfea9825c7eb38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114363970274495764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1457,7 +1469,7 @@ LODGroup:
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LODs:
-  - screenRelativeHeight: 0.19958512
+  - screenRelativeHeight: 0.5979414
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23347812923212004}
