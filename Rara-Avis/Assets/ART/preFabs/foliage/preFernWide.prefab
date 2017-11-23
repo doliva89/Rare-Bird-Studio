@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 135503381855726014}
   - component: {fileID: 114891505676624014}
   - component: {fileID: 114822524156754692}
+  - component: {fileID: 205096618405803170}
   m_Layer: 0
   m_Name: smFernWide
   m_TagString: Foliage
@@ -464,3 +465,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.65
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &205096618405803170
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859496771497040}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.062298775, y: 0.2867329, z: 0.051176906}
+  m_Size: 1.5435402
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19958512
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23209592593465678}
+  m_Enabled: 1

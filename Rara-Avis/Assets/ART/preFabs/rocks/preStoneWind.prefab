@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4199445154454362}
   - component: {fileID: 33657476557465700}
   - component: {fileID: 23521234344293838}
+  - component: {fileID: 205270189282546770}
   m_Layer: 0
   m_Name: smStoneWind
   m_TagString: Untagged
@@ -109,3 +110,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1234331793987924}
   m_Mesh: {fileID: 4300000, guid: d854a50e46dd14b4d98b8617fe11eacd, type: 3}
+--- !u!205 &205270189282546770
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234331793987924}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.05890864, y: 0.4166903, z: -0.028665185}
+  m_Size: 1.4281456
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20222147
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23521234344293838}
+  m_Enabled: 1

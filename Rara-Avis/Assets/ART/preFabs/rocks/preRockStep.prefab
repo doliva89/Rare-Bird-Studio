@@ -36,6 +36,8 @@ GameObject:
   - component: {fileID: 4625200050813064}
   - component: {fileID: 33458872482963212}
   - component: {fileID: 23158498734645892}
+  - component: {fileID: 64337059617751586}
+  - component: {fileID: 205669605910436022}
   m_Layer: 0
   m_Name: smRockStep
   m_TagString: Untagged
@@ -109,3 +111,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1459189358554044}
   m_Mesh: {fileID: 4300000, guid: 6ddb7871abd097c4297403b580f23a3a, type: 3}
+--- !u!64 &64337059617751586
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459189358554044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6ddb7871abd097c4297403b580f23a3a, type: 3}
+--- !u!205 &205669605910436022
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459189358554044}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.24411285, y: 0.37719303, z: -0.32263088}
+  m_Size: 2.5915837
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20016354
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23158498734645892}
+  m_Enabled: 1

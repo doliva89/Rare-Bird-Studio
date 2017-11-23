@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33864267852483042}
   - component: {fileID: 23944823526324528}
   - component: {fileID: 64099534000666542}
+  - component: {fileID: 205579928919194152}
   m_Layer: 0
   m_Name: smRockFin00
   m_TagString: Untagged
@@ -124,3 +125,19 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8ed4d096e7e6ac44ea0974f27fcdd1bb, type: 3}
+--- !u!205 &205579928919194152
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192986910707268}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20428985
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

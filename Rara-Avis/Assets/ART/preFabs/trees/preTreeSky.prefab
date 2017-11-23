@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 4417605577309924}
   - component: {fileID: 33489874360929816}
   - component: {fileID: 23890638320500920}
+  - component: {fileID: 205045430947231306}
   m_Layer: 0
   m_Name: treeSkyCanopy
   m_TagString: Untagged
@@ -68,6 +69,7 @@ GameObject:
   - component: {fileID: 4410650340832818}
   - component: {fileID: 33209744067371364}
   - component: {fileID: 23527009328883386}
+  - component: {fileID: 205847885236105678}
   m_Layer: 0
   m_Name: treeSkyTrunk
   m_TagString: Untagged
@@ -208,3 +210,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440136466763290}
   m_Mesh: {fileID: 4300000, guid: 3bf922a6cd456fc48a7982b1f04be370, type: 3}
+--- !u!205 &205045430947231306
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440136466763290}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.09893513, y: 0.06331873, z: -0.03959179}
+  m_Size: 14.148153
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.30061966
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23890638320500920}
+  m_Enabled: 1
+--- !u!205 &205847885236105678
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510669722977052}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.5231955, y: 4.718427, z: -0.19068253}
+  m_Size: 13.401736
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.30061966
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23527009328883386}
+  m_Enabled: 1

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4440843782299478}
   - component: {fileID: 33139030017955414}
   - component: {fileID: 23564726485339574}
+  - component: {fileID: 205469670830509706}
   m_Layer: 0
   m_Name: treeCliffCanopy
   m_TagString: Untagged
@@ -53,6 +54,7 @@ GameObject:
   - component: {fileID: 4729755945467794}
   - component: {fileID: 33402288363323588}
   - component: {fileID: 23374809626740388}
+  - component: {fileID: 205235245349469874}
   m_Layer: 0
   m_Name: smTreeCliff
   m_TagString: Untagged
@@ -179,3 +181,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1719274950150344}
   m_Mesh: {fileID: 4300000, guid: 64c9e7a88aa338545a849a5e9a9fcde2, type: 3}
+--- !u!205 &205235245349469874
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1719274950150344}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.38299465, y: 1.3387041, z: 0.8669561}
+  m_Size: 4.48469
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20428985
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23374809626740388}
+  m_Enabled: 1
+--- !u!205 &205469670830509706
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1044036750135850}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 4.5433116
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19811608
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23564726485339574}
+  m_Enabled: 1

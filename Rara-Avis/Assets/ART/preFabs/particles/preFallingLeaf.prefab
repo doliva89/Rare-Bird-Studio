@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4467083553657632}
   - component: {fileID: 198224968378993278}
   - component: {fileID: 199067596934594154}
+  - component: {fileID: 205497550993213630}
   m_Layer: 0
   m_Name: FallingLeaves
   m_TagString: Untagged
@@ -129,7 +130,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1740204257
+  randomSeed: 915898211
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3384,3 +3385,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!205 &205497550993213630
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249926857095062}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LODs:
+  - screenRelativeHeight: 0.20171334
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

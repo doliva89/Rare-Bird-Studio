@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4432018186193442}
   - component: {fileID: 33873519583605700}
   - component: {fileID: 23444011374857846}
+  - component: {fileID: 205301300636036444}
+  - component: {fileID: 64330528731204596}
   m_Layer: 0
   m_Name: smRockPortal
   m_TagString: Untagged
@@ -109,3 +111,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1218114922897452}
   m_Mesh: {fileID: 4300000, guid: 4eeca338a3c6caf44861b477adcb1ed4, type: 3}
+--- !u!64 &64330528731204596
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218114922897452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4eeca338a3c6caf44861b477adcb1ed4, type: 3}
+--- !u!205 &205301300636036444
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218114922897452}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.03418839, y: 1.4370396, z: -0.0073379874}
+  m_Size: 3.3352604
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20016354
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23444011374857846}
+  m_Enabled: 1

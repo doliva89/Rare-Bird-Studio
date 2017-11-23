@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 136179164613077998}
   - component: {fileID: 114514354014520408}
   - component: {fileID: 114363970274495764}
+  - component: {fileID: 205563900901351194}
   m_Layer: 0
   m_Name: smTreeSapling
   m_TagString: Foliage
@@ -1444,3 +1445,20 @@ CapsuleCollider:
   m_Height: 2.275931
   m_Direction: 1
   m_Center: {x: 0.12188506, y: 0.81997603, z: 0.0776639}
+--- !u!205 &205563900901351194
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948439434380226}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.121885, y: 0.81997585, z: 0.0776639}
+  m_Size: 2.2759304
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19958512
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23347812923212004}
+  m_Enabled: 1

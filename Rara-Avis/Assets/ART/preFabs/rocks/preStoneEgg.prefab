@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4173407314721924}
   - component: {fileID: 33938137285164902}
   - component: {fileID: 23971969648018536}
+  - component: {fileID: 205827535403997158}
   m_Layer: 0
   m_Name: smStoneEgg
   m_TagString: Untagged
@@ -156,3 +157,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!205 &205827535403997158
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1026420488576454}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 2.2263982
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.20428985
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23971969648018536}
+  m_Enabled: 1

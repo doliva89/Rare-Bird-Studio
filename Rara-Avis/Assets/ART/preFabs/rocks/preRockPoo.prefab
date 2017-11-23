@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 33437101277336880}
   - component: {fileID: 23459968095233718}
   - component: {fileID: 64336212972395260}
+  - component: {fileID: 205112649261701418}
   m_Layer: 0
   m_Name: smRockPoo
   m_TagString: Untagged
@@ -124,3 +125,20 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9b179d9262738984c832c2e619999add, type: 3}
+--- !u!205 &205112649261701418
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875212856093978}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 6.5933313, z: 0.0000009536743}
+  m_Size: 17.4968
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.30313835
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23459968095233718}
+  m_Enabled: 1

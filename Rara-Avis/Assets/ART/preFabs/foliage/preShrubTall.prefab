@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4006528658727892}
+  - component: {fileID: 114951797367177584}
   m_Layer: 0
   m_Name: preShrubTall
   m_TagString: Foliage
@@ -53,9 +54,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062686170949714}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -61.44014, y: 175.33371, z: -142.90205}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.0056914883, y: 0.7179483, z: -0.024312016, w: 0.6956485}
+  m_LocalPosition: {x: -93.13654, y: 175.28809, z: -154.6769}
+  m_LocalScale: {x: 1.9246125, y: 1.9246123, z: 1.9246125}
   m_Children:
   - {fileID: 4402650351327422}
   m_Father: {fileID: 0}
@@ -548,6 +549,17 @@ MonoBehaviour:
   VertexBlueVals: []
   VertexBlueValsStored: 1
   hasChanged: 0
+--- !u!114 &114951797367177584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062686170949714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832f3d50a115d4dacbfea9825c7eb38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136351644162477192
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -570,10 +582,10 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: -0.05103761, y: 0.62772936, z: 0.0037161112}
   m_Size: 1.4526821
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
   m_LODs:
-  - screenRelativeHeight: 0.099828824
+  - screenRelativeHeight: 0.19746813
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23054175362455554}

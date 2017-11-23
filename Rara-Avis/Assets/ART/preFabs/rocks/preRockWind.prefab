@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4190937899244032}
   - component: {fileID: 33161299979553960}
   - component: {fileID: 23574546570634564}
+  - component: {fileID: 205791728161229590}
   m_Layer: 0
   m_Name: smRockWind
   m_TagString: Untagged
@@ -109,3 +110,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1120531715872064}
   m_Mesh: {fileID: 4300000, guid: 78910e4300bd69c44971bfb9e549e829, type: 3}
+--- !u!205 &205791728161229590
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120531715872064}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.056492686, y: 2.003556, z: 0.18172956}
+  m_Size: 4.041164
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19811608
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23574546570634564}
+  m_Enabled: 1
