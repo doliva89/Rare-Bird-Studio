@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88b37b7c389343428fb53db9e85302a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVelocity: 7
+  maxVelocity: 5
   maxForce: 3
   maxSpeed: 15
   mass: 3
@@ -902,6 +902,6 @@ MonoBehaviour:
   seperationRadius: 7
   targetPlayerPosition: {x: 0, y: 1.5, z: 0}
   whenToFlee: 1
-  whenToStopFleeing: 50
+  whenToStopFleeing: 80
   distance: 0
   fleeing: 0
